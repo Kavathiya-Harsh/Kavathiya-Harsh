@@ -73,7 +73,7 @@
 | 💼 **Role** | Full Stack \| Frontend \| React Developer |
 | ⚡ **Joining** | Immediate · 0 Days Notice |
 | 📧 **Email** | harsh.kavathiya.cg@gmail.com |
-| 🌐 **Work Mode** | Remote · Hybrid · Onsite PAN India |
+
 
 <br/>
 
@@ -93,7 +93,7 @@
 <img src="https://img.shields.io/badge/1%2B%20Year%20Experience-0A0F1E?style=for-the-badge"/>&nbsp;
 <img src="https://img.shields.io/badge/10%2B%20Projects%20Built-0A0F1E?style=for-the-badge"/>&nbsp;
 <img src="https://img.shields.io/badge/7%2B%20Technologies-0A0F1E?style=for-the-badge"/>&nbsp;
-<img src="https://img.shields.io/badge/PAN%20India%20%2F%20Remote-0A0F1E?style=for-the-badge"/>
+
 </div>
 
 <br/>
