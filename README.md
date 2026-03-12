@@ -90,7 +90,7 @@
 | 💼 **Role** | Full Stack \| Frontend \| React Developer |
 | ⚡ **Joining** | Immediate · 0 Days Notice |
 | 📧 **Email** | harsh.kavathiya.cg@gmail.com |
-| 🌐 **Work Mode** | Remote · Hybrid · Onsite PAN India |
+
 
 <br/>
 
@@ -112,7 +112,6 @@
 <img src="https://img.shields.io/badge/1%2B%20Year%20Experience-0A0F1E?style=for-the-badge"/>&nbsp;
 <img src="https://img.shields.io/badge/10%2B%20Projects%20Built-0A0F1E?style=for-the-badge"/>&nbsp;
 <img src="https://img.shields.io/badge/7%2B%20Technologies-0A0F1E?style=for-the-badge"/>&nbsp;
-<img src="https://img.shields.io/badge/PAN%20India%20%2F%20Remote-0A0F1E?style=for-the-badge"/>
 </div>
 
 <br/>
@@ -134,7 +133,7 @@
 <tr>
 <td width="50%" valign="top">
 
-### 🙋 Who Am I?
+### 🙋 About Me
 
 I'm **Harsh Kavathiya**, a passionate **Full Stack Developer** from **Rajkot, Gujarat, India** 🇮🇳
 
@@ -385,31 +384,6 @@ I love turning ideas into **real, working web applications** using the **MERN st
 
 <br/>
 
-<!-- ▓▓▓▓▓▓  TROPHIES — ANIMATED TROPHY SHELF  ▓▓▓▓▓▓ -->
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=800&size=26&duration=1&pause=9999999&color=FFFFFF&center=true&vCenter=true&width=280&lines=GitHub+Trophies" alt="Trophies"/>
-
-<br/><br/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=Kavathiya-Harsh&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=8" width="100%"/>
-
-</div>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D0D0D,49:00D4FF,51:00D4FF,100:0D0D0D&height=2" width="100%"/>
-
-<br/>
-
-<!-- ▓▓▓▓▓▓  CONTRIBUTION SNAKE — ANIMATED SVG  ▓▓▓▓▓▓ -->
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=800&size=26&duration=1&pause=9999999&color=FFFFFF&center=true&vCenter=true&width=320&lines=Contribution+Snake" alt="Snake"/>
-
-<br/><br/>
 
 <!-- Auto-switches dark/light, fully animated SVG snake -->
 <picture>
@@ -511,34 +485,6 @@ I love turning ideas into **real, working web applications** using the **MERN st
 | 🕐 **Deadline Driven** | Consistently delivers quality work on time |
 | 🏗️ **Self Starter** | Takes full ownership and drives tasks independently |
 | 💬 **Open to Feedback** | Welcomes code reviews and improves from critique |
-
-</div>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D0D0D,49:00D4FF,51:00D4FF,100:0D0D0D&height=2" width="100%"/>
-
-<br/>
-
-<!-- ▓▓▓▓▓▓  FEATURED PROJECTS — ANIMATED PIN CARDS  ▓▓▓▓▓▓ -->
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=800&size=26&duration=1&pause=9999999&color=FFFFFF&center=true&vCenter=true&width=320&lines=Featured+Projects" alt="Projects"/>
-
-<br/>
-
-> ⚠️ Replace `REPO-1` and `REPO-2` with your actual repository names
-
-<br/>
-
-<a href="https://github.com/Kavathiya-Harsh/REPO-1">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Kavathiya-Harsh&repo=REPO-1&hide_border=true&bg_color=0D0D0D&title_color=00D4FF&icon_color=00D4FF&text_color=E2E8F0" width="47%"/>
-</a>
-&nbsp;
-<a href="https://github.com/Kavathiya-Harsh/REPO-2">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Kavathiya-Harsh&repo=REPO-2&hide_border=true&bg_color=0D0D0D&title_color=00D4FF&icon_color=00D4FF&text_color=E2E8F0" width="47%"/>
-</a>
 
 </div>
 
