@@ -245,16 +245,7 @@ I love turning ideas into **real, working web applications** using the **MERN st
 
 <br/><br/>
 
-| Skill | Bar | Level | |
-|:------|:----|:------|:--|
-| HTML & CSS | `██████████████████████░░` | 85% | 🎨 Expert |
-| JavaScript | `█████████████████████░░░` | 80% | ⚡ Advanced |
-| React.js | `█████████████████████░░░` | 80% | ⚛️ Advanced |
-| Git & GitHub | `█████████████████████░░░` | 80% | 🐙 Advanced |
-| C / C++ | `██████████████████░░░░░░` | 72% | 💻 Proficient |
-| MongoDB | `█████████████████░░░░░░░` | 65% | 🍃 Intermediate |
-| Node.js | `██████████████░░░░░░░░░░` | 55% | 🟢 Growing ↑ |
-| Express.js | `██████████████░░░░░░░░░░` | 55% | 🚂 Growing ↑ |
+<img src="https://raw.githubusercontent.com/Kavathiya-Harsh/Kavathiya-Harsh/main/skills.svg" width="100%" alt="Skill Levels"/>
 
 </div>
 
@@ -410,6 +401,11 @@ I love turning ideas into **real, working web applications** using the **MERN st
 
 <br/><br/>
 
+<!-- ── CONTRIBUTION HEATMAP CALENDAR ── -->
+<img src="https://ghchart.rshah.org/00D4FF/Kavathiya-Harsh" width="100%" alt="Harsh's GitHub Contribution Heatmap"/>
+
+<br/><br/>
+
 <!-- Area fill + animated dots — cyan on black -->
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kavathiya-Harsh&bg_color=0D0D0D&color=00D4FF&line=0284C7&point=38BDF8&area=true&area_color=00D4FF15&hide_border=true&custom_title=Harsh's%20Contribution%20Timeline&radius=6" width="100%"/>
 
@@ -472,7 +468,7 @@ I love turning ideas into **real, working web applications** using the **MERN st
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=800&size=26&duration=1&pause=9999999&color=FFFFFF&center=true&vCenter=true&width=240&lines=Soft+Skills" alt="Soft Skills"/>
+<img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=500&size=26&duration=1&pause=9999999&color=FFFFFF&center=true&vCenter=true&width=140&lines=Soft+Skills" alt="Soft Skills"/>
 
 <br/><br/>
 
@@ -507,13 +503,6 @@ I love turning ideas into **real, working web applications** using the **MERN st
 
 <br/><br/>
 
-| 🏷️ Role | 📍 Preference | ⚡ Available |
-|:--------|:-------------|:------------|
-| 🖥️ **Full Stack Developer** | Remote · Rajkot · PAN India | ✅ Immediate |
-| ⚛️ **Frontend / React Dev** | Remote · Rajkot · PAN India | ✅ Immediate |
-| 🌐 **MERN Stack Developer** | Remote · PAN India | ✅ Immediate |
-| 💼 **Junior Web Developer** | Remote · Onsite · Rajkot | ✅ Immediate |
-| 📝 **Web Dev Internship** | Remote · Onsite | ✅ Immediate |
 
 <br/>
 
@@ -585,5 +574,4 @@ I love turning ideas into **real, working web applications** using the **MERN st
 
 <!-- VENOM footer — mirrors the header perfectly -->
 <img src="https://capsule-render.vercel.app/api?type=venom&color=0:0D0D0D,30:0A0F1E,60:0C1E3C,100:0D0D0D&height=200&section=footer&text=Let's%20Build%20Something%20Amazing&fontSize=28&fontColor=00D4FF&animation=twinkling&fontAlignY=44&desc=harsh.kavathiya.cg%40gmail.com%20%20%C2%B7%20%20linkedin.com%2Fin%2Fharshkavathiya%20%20%C2%B7%20%20Rajkot%2C%20India&descSize=13&descColor=475569&descAlignY=68&fontFamily=Raleway" width="100%"/>
-
 </div>
