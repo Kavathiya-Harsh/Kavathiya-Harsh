@@ -1,0 +1,252 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="490" viewBox="0 0 800 490">
+  <defs>
+    <filter id="glow" x="-10%" y="-100%" width="120%" height="300%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#0891B2"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0A1628"/>
+      <stop offset="100%" stop-color="#060D1A"/>
+    </linearGradient>
+    <clipPath id="bar0"><rect x="170" y="69" width="420" height="20" rx="10"/></clipPath>
+    <clipPath id="bar1"><rect x="170" y="121" width="420" height="20" rx="10"/></clipPath>
+    <clipPath id="bar2"><rect x="170" y="173" width="420" height="20" rx="10"/></clipPath>
+    <clipPath id="bar3"><rect x="170" y="225" width="420" height="20" rx="10"/></clipPath>
+    <clipPath id="bar4"><rect x="170" y="277" width="420" height="20" rx="10"/></clipPath>
+    <clipPath id="bar5"><rect x="170" y="329" width="420" height="20" rx="10"/></clipPath>
+    <clipPath id="bar6"><rect x="170" y="381" width="420" height="20" rx="10"/></clipPath>
+    <clipPath id="bar7"><rect x="170" y="433" width="420" height="20" rx="10"/></clipPath>
+  </defs>
+
+  <style>
+    @keyframes fillBar0  { 0%{width:0}  100%{width:357px} }
+    @keyframes fillBar1  { 0%{width:0}  100%{width:336px} }
+    @keyframes fillBar2  { 0%{width:0}  100%{width:336px} }
+    @keyframes fillBar3  { 0%{width:0}  100%{width:336px} }
+    @keyframes fillBar4  { 0%{width:0}  100%{width:302px} }
+    @keyframes fillBar5  { 0%{width:0}  100%{width:273px} }
+    @keyframes fillBar6  { 0%{width:0}  100%{width:231px} }
+    @keyframes fillBar7  { 0%{width:0}  100%{width:231px} }
+    @keyframes fadeIn    { 0%{opacity:0} 60%{opacity:0} 100%{opacity:1} }
+    @keyframes slideIn   { 0%{opacity:0;transform:translateX(-8px)} 100%{opacity:1;transform:translateX(0)} }
+    @keyframes pulse     { 0%,100%{opacity:1} 50%{opacity:0.6} }
+
+    .f0  { animation: fillBar0  1.4s cubic-bezier(0.22,1,0.36,1) 0.10s both; }
+    .f1  { animation: fillBar1  1.4s cubic-bezier(0.22,1,0.36,1) 0.22s both; }
+    .f2  { animation: fillBar2  1.4s cubic-bezier(0.22,1,0.36,1) 0.34s both; }
+    .f3  { animation: fillBar3  1.4s cubic-bezier(0.22,1,0.36,1) 0.46s both; }
+    .f4  { animation: fillBar4  1.4s cubic-bezier(0.22,1,0.36,1) 0.58s both; }
+    .f5  { animation: fillBar5  1.4s cubic-bezier(0.22,1,0.36,1) 0.70s both; }
+    .f6  { animation: fillBar6  1.4s cubic-bezier(0.22,1,0.36,1) 0.82s both; }
+    .f7  { animation: fillBar7  1.4s cubic-bezier(0.22,1,0.36,1) 0.94s both; }
+
+    .lbl  { animation: slideIn  0.6s ease both; }
+    .l0   { animation-delay: 0.05s; }
+    .l1   { animation-delay: 0.17s; }
+    .l2   { animation-delay: 0.29s; }
+    .l3   { animation-delay: 0.41s; }
+    .l4   { animation-delay: 0.53s; }
+    .l5   { animation-delay: 0.65s; }
+    .l6   { animation-delay: 0.77s; }
+    .l7   { animation-delay: 0.89s; }
+
+    .pct  { animation: fadeIn 2s ease both; }
+    .bdg  { animation: fadeIn 2.2s ease both; }
+    .dot  { animation: pulse 2.4s ease-in-out infinite; }
+  </style>
+
+  <!-- Outer background -->
+  <rect width="800" height="490" rx="14" fill="url(#bgGrad)"/>
+  <!-- Outer border glow -->
+  <rect x="0.5" y="0.5" width="799" height="489" rx="13.5" fill="none" stroke="#00D4FF" stroke-width="1" stroke-opacity="0.25"/>
+
+  <!-- Header strip -->
+  <rect width="800" height="52" rx="14" fill="#0D1F35"/>
+  <rect y="38" width="800" height="14" fill="#0D1F35"/>
+  <line x1="0" y1="52" x2="800" y2="52" stroke="#1E3A5F" stroke-width="1"/>
+
+  <!-- Header labels -->
+  <text x="22" y="31" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="10" font-weight="700" fill="#4A7FA5" letter-spacing="2">SKILL</text>
+  <text x="172" y="31" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="10" font-weight="700" fill="#4A7FA5" letter-spacing="2">PROGRESS</text>
+  <text x="600" y="31" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="10" font-weight="700" fill="#4A7FA5" letter-spacing="2">PCT</text>
+  <text x="645" y="31" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="10" font-weight="700" fill="#4A7FA5" letter-spacing="2">LEVEL</text>
+
+  <!-- ── ROW DIVIDERS ── -->
+  <line x1="20" y1="104" x2="780" y2="104" stroke="#1E3A5F" stroke-width="0.5" stroke-opacity="0.6"/>
+  <line x1="20" y1="156" x2="780" y2="156" stroke="#1E3A5F" stroke-width="0.5" stroke-opacity="0.6"/>
+  <line x1="20" y1="208" x2="780" y2="208" stroke="#1E3A5F" stroke-width="0.5" stroke-opacity="0.6"/>
+  <line x1="20" y1="260" x2="780" y2="260" stroke="#1E3A5F" stroke-width="0.5" stroke-opacity="0.6"/>
+  <line x1="20" y1="312" x2="780" y2="312" stroke="#1E3A5F" stroke-width="0.5" stroke-opacity="0.6"/>
+  <line x1="20" y1="364" x2="780" y2="364" stroke="#1E3A5F" stroke-width="0.5" stroke-opacity="0.6"/>
+  <line x1="20" y1="416" x2="780" y2="416" stroke="#1E3A5F" stroke-width="0.5" stroke-opacity="0.6"/>
+
+  <!-- ════════════════════ ROW 0 — HTML & CSS  85% ════════════════════ -->
+  <!-- Pulsing dot -->
+  <circle class="dot" cx="10" cy="79" r="3" fill="#00D4FF"/>
+  <!-- Skill name -->
+  <text class="lbl l0" x="22" y="84" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="14" font-weight="600" fill="#E2E8F0">HTML &amp; CSS</text>
+  <!-- Bar bg -->
+  <rect x="170" y="69" width="420" height="20" rx="10" fill="#0F2236"/>
+  <!-- Bar fill (clip + animate width) -->
+  <g clip-path="url(#bar0)">
+    <rect class="f0" x="170" y="69" height="20" rx="10" fill="url(#barGrad)" filter="url(#glow)"/>
+    <rect class="f0" x="170" y="69" height="10" rx="10" fill="url(#sheen)"/>
+  </g>
+  <!-- Tick marks on bg -->
+  <line x1="254" y1="69" x2="254" y2="89" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="338" y1="69" x2="338" y2="89" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="422" y1="69" x2="422" y2="89" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="506" y1="69" x2="506" y2="89" stroke="#1E3A5F" stroke-width="1"/>
+  <!-- Percent -->
+  <text class="pct" x="607" y="84" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="14" font-weight="700" fill="#00D4FF" text-anchor="end">85%</text>
+  <!-- Badge — Expert (purple) -->
+  <g class="bdg">
+    <rect x="616" y="65" width="72" height="24" rx="12" fill="#3C3489" fill-opacity="0.7" stroke="#7F77DD" stroke-width="0.8"/>
+    <text x="652" y="81" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="11" font-weight="600" fill="#AFA9EC" text-anchor="middle">Expert</text>
+  </g>
+
+  <!-- ════════════════════ ROW 1 — JavaScript  80% ════════════════════ -->
+  <circle class="dot" cx="10" cy="131" r="3" fill="#00D4FF"/>
+  <text class="lbl l1" x="22" y="136" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="14" font-weight="600" fill="#E2E8F0">JavaScript</text>
+  <rect x="170" y="121" width="420" height="20" rx="10" fill="#0F2236"/>
+  <g clip-path="url(#bar1)">
+    <rect class="f1" x="170" y="121" height="20" rx="10" fill="url(#barGrad)" filter="url(#glow)"/>
+    <rect class="f1" x="170" y="121" height="10" rx="10" fill="url(#sheen)"/>
+  </g>
+  <line x1="254" y1="121" x2="254" y2="141" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="338" y1="121" x2="338" y2="141" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="422" y1="121" x2="422" y2="141" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="506" y1="121" x2="506" y2="141" stroke="#1E3A5F" stroke-width="1"/>
+  <text class="pct" x="607" y="136" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="14" font-weight="700" fill="#00D4FF" text-anchor="end">80%</text>
+  <!-- Badge — Advanced (teal) -->
+  <g class="bdg">
+    <rect x="616" y="117" width="80" height="24" rx="12" fill="#085041" fill-opacity="0.7" stroke="#1D9E75" stroke-width="0.8"/>
+    <text x="656" y="133" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="11" font-weight="600" fill="#5DCAA5" text-anchor="middle">Advanced</text>
+  </g>
+
+  <!-- ════════════════════ ROW 2 — React.js  80% ════════════════════ -->
+  <circle class="dot" cx="10" cy="183" r="3" fill="#00D4FF"/>
+  <text class="lbl l2" x="22" y="188" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="14" font-weight="600" fill="#E2E8F0">React.js</text>
+  <rect x="170" y="173" width="420" height="20" rx="10" fill="#0F2236"/>
+  <g clip-path="url(#bar2)">
+    <rect class="f2" x="170" y="173" height="20" rx="10" fill="url(#barGrad)" filter="url(#glow)"/>
+    <rect class="f2" x="170" y="173" height="10" rx="10" fill="url(#sheen)"/>
+  </g>
+  <line x1="254" y1="173" x2="254" y2="193" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="338" y1="173" x2="338" y2="193" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="422" y1="173" x2="422" y2="193" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="506" y1="173" x2="506" y2="193" stroke="#1E3A5F" stroke-width="1"/>
+  <text class="pct" x="607" y="188" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="14" font-weight="700" fill="#00D4FF" text-anchor="end">80%</text>
+  <g class="bdg">
+    <rect x="616" y="169" width="80" height="24" rx="12" fill="#085041" fill-opacity="0.7" stroke="#1D9E75" stroke-width="0.8"/>
+    <text x="656" y="185" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="11" font-weight="600" fill="#5DCAA5" text-anchor="middle">Advanced</text>
+  </g>
+
+  <!-- ════════════════════ ROW 3 — Git & GitHub  80% ════════════════════ -->
+  <circle class="dot" cx="10" cy="235" r="3" fill="#00D4FF"/>
+  <text class="lbl l3" x="22" y="240" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="14" font-weight="600" fill="#E2E8F0">Git &amp; GitHub</text>
+  <rect x="170" y="225" width="420" height="20" rx="10" fill="#0F2236"/>
+  <g clip-path="url(#bar3)">
+    <rect class="f3" x="170" y="225" height="20" rx="10" fill="url(#barGrad)" filter="url(#glow)"/>
+    <rect class="f3" x="170" y="225" height="10" rx="10" fill="url(#sheen)"/>
+  </g>
+  <line x1="254" y1="225" x2="254" y2="245" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="338" y1="225" x2="338" y2="245" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="422" y1="225" x2="422" y2="245" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="506" y1="225" x2="506" y2="245" stroke="#1E3A5F" stroke-width="1"/>
+  <text class="pct" x="607" y="240" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="14" font-weight="700" fill="#00D4FF" text-anchor="end">80%</text>
+  <g class="bdg">
+    <rect x="616" y="221" width="80" height="24" rx="12" fill="#085041" fill-opacity="0.7" stroke="#1D9E75" stroke-width="0.8"/>
+    <text x="656" y="237" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="11" font-weight="600" fill="#5DCAA5" text-anchor="middle">Advanced</text>
+  </g>
+
+  <!-- ════════════════════ ROW 4 — C / C++  72% ════════════════════ -->
+  <circle class="dot" cx="10" cy="287" r="3" fill="#00D4FF"/>
+  <text class="lbl l4" x="22" y="292" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="14" font-weight="600" fill="#E2E8F0">C / C++</text>
+  <rect x="170" y="277" width="420" height="20" rx="10" fill="#0F2236"/>
+  <g clip-path="url(#bar4)">
+    <rect class="f4" x="170" y="277" height="20" rx="10" fill="url(#barGrad)" filter="url(#glow)"/>
+    <rect class="f4" x="170" y="277" height="10" rx="10" fill="url(#sheen)"/>
+  </g>
+  <line x1="254" y1="277" x2="254" y2="297" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="338" y1="277" x2="338" y2="297" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="422" y1="277" x2="422" y2="297" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="506" y1="277" x2="506" y2="297" stroke="#1E3A5F" stroke-width="1"/>
+  <text class="pct" x="607" y="292" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="14" font-weight="700" fill="#00D4FF" text-anchor="end">72%</text>
+  <!-- Badge — Proficient (blue) -->
+  <g class="bdg">
+    <rect x="616" y="273" width="84" height="24" rx="12" fill="#042C53" fill-opacity="0.8" stroke="#378ADD" stroke-width="0.8"/>
+    <text x="658" y="289" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="11" font-weight="600" fill="#85B7EB" text-anchor="middle">Proficient</text>
+  </g>
+
+  <!-- ════════════════════ ROW 5 — MongoDB  65% ════════════════════ -->
+  <circle class="dot" cx="10" cy="339" r="3" fill="#00D4FF"/>
+  <text class="lbl l5" x="22" y="344" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="14" font-weight="600" fill="#E2E8F0">MongoDB</text>
+  <rect x="170" y="329" width="420" height="20" rx="10" fill="#0F2236"/>
+  <g clip-path="url(#bar5)">
+    <rect class="f5" x="170" y="329" height="20" rx="10" fill="url(#barGrad)" filter="url(#glow)"/>
+    <rect class="f5" x="170" y="329" height="10" rx="10" fill="url(#sheen)"/>
+  </g>
+  <line x1="254" y1="329" x2="254" y2="349" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="338" y1="329" x2="338" y2="349" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="422" y1="329" x2="422" y2="349" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="506" y1="329" x2="506" y2="349" stroke="#1E3A5F" stroke-width="1"/>
+  <text class="pct" x="607" y="344" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="14" font-weight="700" fill="#00D4FF" text-anchor="end">65%</text>
+  <!-- Badge — Intermediate (amber) -->
+  <g class="bdg">
+    <rect x="610" y="325" width="102" height="24" rx="12" fill="#412402" fill-opacity="0.8" stroke="#BA7517" stroke-width="0.8"/>
+    <text x="661" y="341" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="11" font-weight="600" fill="#FAC775" text-anchor="middle">Intermediate</text>
+  </g>
+
+  <!-- ════════════════════ ROW 6 — Node.js  55% ════════════════════ -->
+  <circle class="dot" cx="10" cy="391" r="3" fill="#00D4FF"/>
+  <text class="lbl l6" x="22" y="396" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="14" font-weight="600" fill="#E2E8F0">Node.js</text>
+  <rect x="170" y="381" width="420" height="20" rx="10" fill="#0F2236"/>
+  <g clip-path="url(#bar6)">
+    <rect class="f6" x="170" y="381" height="20" rx="10" fill="url(#barGrad)" filter="url(#glow)"/>
+    <rect class="f6" x="170" y="381" height="10" rx="10" fill="url(#sheen)"/>
+  </g>
+  <line x1="254" y1="381" x2="254" y2="401" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="338" y1="381" x2="338" y2="401" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="422" y1="381" x2="422" y2="401" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="506" y1="381" x2="506" y2="401" stroke="#1E3A5F" stroke-width="1"/>
+  <text class="pct" x="607" y="396" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="14" font-weight="700" fill="#00D4FF" text-anchor="end">55%</text>
+  <!-- Badge — Growing (green) -->
+  <g class="bdg">
+    <rect x="614" y="377" width="88" height="24" rx="12" fill="#173404" fill-opacity="0.8" stroke="#639922" stroke-width="0.8"/>
+    <text x="658" y="393" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="11" font-weight="600" fill="#C0DD97" text-anchor="middle">Growing ↑</text>
+  </g>
+
+  <!-- ════════════════════ ROW 7 — Express.js  55% ════════════════════ -->
+  <circle class="dot" cx="10" cy="443" r="3" fill="#00D4FF"/>
+  <text class="lbl l7" x="22" y="448" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="14" font-weight="600" fill="#E2E8F0">Express.js</text>
+  <rect x="170" y="433" width="420" height="20" rx="10" fill="#0F2236"/>
+  <g clip-path="url(#bar7)">
+    <rect class="f7" x="170" y="433" height="20" rx="10" fill="url(#barGrad)" filter="url(#glow)"/>
+    <rect class="f7" x="170" y="433" height="10" rx="10" fill="url(#sheen)"/>
+  </g>
+  <line x1="254" y1="433" x2="254" y2="453" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="338" y1="433" x2="338" y2="453" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="422" y1="433" x2="422" y2="453" stroke="#1E3A5F" stroke-width="1"/>
+  <line x1="506" y1="433" x2="506" y2="453" stroke="#1E3A5F" stroke-width="1"/>
+  <text class="pct" x="607" y="448" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="14" font-weight="700" fill="#00D4FF" text-anchor="end">55%</text>
+  <g class="bdg">
+    <rect x="614" y="429" width="88" height="24" rx="12" fill="#173404" fill-opacity="0.8" stroke="#639922" stroke-width="0.8"/>
+    <text x="658" y="445" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="11" font-weight="600" fill="#C0DD97" text-anchor="middle">Growing ↑</text>
+  </g>
+
+  <!-- Bottom border accent -->
+  <rect x="170" y="474" width="460" height="2" rx="1" fill="#00D4FF" fill-opacity="0.2"/>
+  <rect x="310" y="474" width="180" height="2" rx="1" fill="#00D4FF" fill-opacity="0.5"/>
+</svg>
