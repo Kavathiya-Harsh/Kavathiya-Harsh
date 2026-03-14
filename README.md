@@ -48,7 +48,7 @@
 
 <!-- Photo — Cloudinary circular crop with animated cyan ring -->
 <a href="https://github.com/Kavathiya-Harsh">
-<img src="https://res.cloudinary.com/dlolzw5ir/image/upload/w_200,h_200,c_fill,g_face,r_max,bo_4px_solid_rgb:00D4FF/f_png/q_auto:best/WhatsApp_Image_2026-03-12_at_10.27.41_AM_fcf83o" width="185" alt="Harsh Kavathiya"/>
+<img src="https://res.cloudinary.com/dvv5mtpli/image/upload/f_png/q_auto:best/image_wf3f67" width="185" alt="Harsh Kavathiya"/>
 </a>
 
 <br/><br/>
