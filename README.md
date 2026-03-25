@@ -12,17 +12,14 @@
 
 <div align="center">
 
-<!-- VENOM type = most dramatic animated header capsule-render offers -->
 <img src="https://capsule-render.vercel.app/api?type=venom&color=0:0D0D0D,30:0A0F1E,60:0C1E3C,100:0D0D0D&height=280&section=header&text=HARSH%20KAVATHIYA&fontSize=64&fontColor=FFFFFF&animation=twinkling&fontAlignY=42&stroke=00D4FF&strokeWidth=2&desc=Full%20Stack%20Developer%20%20%C2%B7%20%20MERN%20%20%C2%B7%20%20React%20%20%C2%B7%20%20JavaScript%20%20%C2%B7%20%20Open%20to%20Work&descAlignY=64&descSize=15&descColor=00D4FF&fontFamily=Bebas%20Neue" width="100%"/>
 
 <br/>
 
-<!-- Greeting — Raleway bold, professional, animated loop -->
 <img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=700&size=18&duration=3000&pause=700&color=00D4FF&center=true&vCenter=true&multiline=false&repeat=true&width=820&lines=Welcome+to+my+GitHub+Profile!;I+build+clean%2C+scalable+web+applications;React+%7C+Node.js+%7C+MongoDB+%7C+JavaScript;Clean+Code+%C2%B7+Fast+Delivery+%C2%B7+Always+Learning;Let%27s+build+something+amazing+together!" alt="Greeting"/>
 
 <br/><br/>
 
-<!-- Live animated counters — update in real-time -->
 <img src="https://komarev.com/ghpvc/?username=Kavathiya-Harsh&color=00D4FF&style=flat-square&label=Profile+Views&labelColor=0A0F1E"/>
 &nbsp;
 <img src="https://img.shields.io/github/followers/Kavathiya-Harsh?label=Followers&style=flat-square&color=00D4FF&labelColor=0A0F1E&logo=github"/>
@@ -33,66 +30,34 @@
 
 <br/>
 
-<!-- Sharp gradient divider — bright centre pulse -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D0D0D,49:00D4FF,51:00D4FF,100:0D0D0D&height=2" width="100%"/>
 
 <br/>
 
-<!-- ▓▓▓▓▓▓  HERO — PHOTO + IDENTITY  ▓▓▓▓▓▓ -->
+<!-- ▓▓▓▓▓▓  HERO — IDENTITY (CENTERED)  ▓▓▓▓▓▓ -->
 
-<table align="center" width="94%" border="0" cellspacing="0" cellpadding="0">
-<tr>
-
-<td width="240" align="center" valign="top">
-<br/>
-
-<!-- Photo — Cloudinary circular crop with animated cyan ring -->
-<a href="https://github.com/Kavathiya-Harsh">
-<img src="https://res.cloudinary.com/dvv5mtpli/image/upload/f_png/q_auto:best/image_wf3f67" width="185" alt="Harsh Kavathiya"/>
-</a>
-
-<br/><br/>
-
-<!-- Animated availability badge -->
-<img src="https://img.shields.io/badge/%F0%9F%9F%A2%20Open%20to%20Work-00D4FF?style=flat-square&logoColor=0D0D0D"/>
-<br/><br/>
-<img src="https://komarev.com/ghpvc/?username=Kavathiya-Harsh&color=00D4FF&style=flat-square&label=Profile+Views&labelColor=0A0F1E"/>
-
-<br/><br/>
-
-<!-- Animated social links -->
-<a href="https://www.linkedin.com/in/harshkavathiya"><img src="https://img.shields.io/badge/LinkedIn-0A0F1E?style=for-the-badge&logo=linkedin&logoColor=00D4FF"/></a><br/>
-<a href="https://x.com/HarshK62610"><img src="https://img.shields.io/badge/Twitter%20%2F%20X-0A0F1E?style=for-the-badge&logo=x&logoColor=00D4FF"/></a><br/>
-<a href="mailto:harsh.kavathiya.cg@gmail.com"><img src="https://img.shields.io/badge/Gmail-0A0F1E?style=for-the-badge&logo=gmail&logoColor=00D4FF"/></a><br/>
-<a href="https://github.com/Kavathiya-Harsh"><img src="https://img.shields.io/badge/GitHub-0A0F1E?style=for-the-badge&logo=github&logoColor=00D4FF"/></a>
-
-</td>
-
-<td width="40"></td>
-
-<td valign="top">
-<br/>
+<div align="center">
 
 <!-- NAME — Bebas Neue: cinematic static display -->
-<img src="https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=58&duration=1&pause=9999999&color=FFFFFF&vCenter=true&width=540&lines=Harsh+Kavathiya" alt="Harsh Kavathiya"/>
+<img src="https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=58&duration=1&pause=9999999&color=FFFFFF&center=true&vCenter=true&width=540&lines=Harsh+Kavathiya" alt="Harsh Kavathiya"/>
 
 <br/>
 
-<!-- ROLES — Fira Code looping with cursor blink -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=2600&pause=800&color=00D4FF&vCenter=true&repeat=true&cursor=true&width=570&lines=%E2%9F%A9+Full+Stack+Developer+%7C+MERN+Stack;%E2%9F%A9+React.js+%7C+Node.js+%7C+MongoDB;%E2%9F%A9+Building+Scalable+Web+Apps;%E2%9F%A9+Open+to+Work+--+Immediate+Joining;%E2%9F%A9+Rajkot%2C+Gujarat%2C+India" alt="Roles"/>
+
+<img src="https://img.shields.io/badge/%F0%9F%9F%A2%20Open%20to%20Work-00D4FF?style=flat-square&logoColor=0D0D0D"/>
 
 <br/><br/>
 
-| &nbsp; | &nbsp; |
-|:---|:---|
-| 📍 **Location** | Rajkot, Gujarat, India 🇮🇳 |
-| 🎓 **Education** | Computer Science & Engineering |
-| 💼 **Role** | Full Stack \| Frontend \| React Developer |
-| ⚡ **Joining** | Immediate · 0 Days Notice |
-| 📧 **Email** | harsh.kavathiya.cg@gmail.com |
+<!-- Social links -->
+<a href="https://www.linkedin.com/in/harshkavathiya"><img src="https://img.shields.io/badge/LinkedIn-0A0F1E?style=for-the-badge&logo=linkedin&logoColor=00D4FF"/></a>
+&nbsp;
+<a href="https://x.com/HarshK62610"><img src="https://img.shields.io/badge/Twitter%20%2F%20X-0A0F1E?style=for-the-badge&logo=x&logoColor=00D4FF"/></a>
+&nbsp;
+<a href="mailto:harsh.kavathiya.cg@gmail.com"><img src="https://img.shields.io/badge/Gmail-0A0F1E?style=for-the-badge&logo=gmail&logoColor=00D4FF"/></a>
+&nbsp;
+<a href="https://github.com/Kavathiya-Harsh"><img src="https://img.shields.io/badge/GitHub-0A0F1E?style=for-the-badge&logo=github&logoColor=00D4FF"/></a>
 
-
-<br/>
+<br/><br/>
 
 <!-- CTA buttons -->
 <a href="mailto:harsh.kavathiya.cg@gmail.com"><img src="https://img.shields.io/badge/Hire%20Me%20Now-00D4FF?style=for-the-badge&logo=gmail&logoColor=0D0D0D"/></a>
@@ -101,17 +66,12 @@
 &nbsp;
 <a href="https://github.com/Kavathiya-Harsh?tab=repositories"><img src="https://img.shields.io/badge/My%20Repos-0A0F1E?style=for-the-badge&logo=github&logoColor=00D4FF"/></a>
 
-</td>
-</tr>
-</table>
+<br/><br/>
 
-<br/>
-
-<!-- Animated stat pills — live data where possible -->
-<div align="center">
 <img src="https://img.shields.io/badge/1%2B%20Year%20Experience-0A0F1E?style=for-the-badge"/>&nbsp;
 <img src="https://img.shields.io/badge/10%2B%20Projects%20Built-0A0F1E?style=for-the-badge"/>&nbsp;
 <img src="https://img.shields.io/badge/7%2B%20Technologies-0A0F1E?style=for-the-badge"/>&nbsp;
+
 </div>
 
 <br/>
@@ -123,7 +83,6 @@
 <!-- ▓▓▓▓▓▓  ABOUT ME  ▓▓▓▓▓▓ -->
 
 <div align="center">
-<!-- Static Raleway heading — no SVG breakage -->
 <img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=800&size=26&duration=1&pause=9999999&color=FFFFFF&center=true&vCenter=true&width=280&lines=About+Me" alt="About Me"/>
 </div>
 
@@ -183,7 +142,6 @@ I love turning ideas into **real, working web applications** using the **MERN st
 
 <br/><br/>
 
-<!-- skillicons.dev — built-in hover animation on each icon -->
 <img src="https://skillicons.dev/icons?i=c,cpp,js,html,css,react,nodejs,express,mongodb,git,github,vscode&theme=dark&perline=12" width="86%"/>
 
 <br/><br/>
@@ -331,14 +289,12 @@ I love turning ideas into **real, working web applications** using the **MERN st
 
 <br/><br/>
 
-<!-- Stats + Streak side by side — both animated SVGs -->
 <img src="https://github-readme-stats.vercel.app/api?username=Kavathiya-Harsh&show_icons=true&count_private=true&hide_border=true&bg_color=0D0D0D&title_color=00D4FF&icon_color=00D4FF&text_color=E2E8F0&ring_color=00D4FF&include_all_commits=true" height="180"/>
 &nbsp;
 <img src="https://github-readme-streak-stats.herokuapp.com?user=Kavathiya-Harsh&hide_border=true&background=0D0D0D&stroke=00D4FF&ring=00D4FF&fire=38BDF8&currStreakLabel=00D4FF&sideLabels=E2E8F0&dates=475569&currStreakNum=FFFFFF&sideNums=00D4FF" height="180"/>
 
 <br/><br/>
 
-<!-- Donut chart — animated SVG -->
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kavathiya-Harsh&layout=donut&hide_border=true&bg_color=0D0D0D&title_color=00D4FF&text_color=E2E8F0&langs_count=8" height="200"/>
 
 </div>
@@ -357,12 +313,10 @@ I love turning ideas into **real, working web applications** using the **MERN st
 
 <br/><br/>
 
-<!-- Full-width summary card -->
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Kavathiya-Harsh&theme=github_dark" width="96%"/>
 
 <br/>
 
-<!-- 3 small cards in a row -->
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Kavathiya-Harsh&theme=github_dark" width="32%"/>
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Kavathiya-Harsh&theme=github_dark" width="32%"/>
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Kavathiya-Harsh&theme=github_dark" width="32%"/>
@@ -375,6 +329,7 @@ I love turning ideas into **real, working web applications** using the **MERN st
 
 <br/>
 
+<div align="center">
 
 <!-- Auto-switches dark/light, fully animated SVG snake -->
 <picture>
@@ -401,12 +356,10 @@ I love turning ideas into **real, working web applications** using the **MERN st
 
 <br/><br/>
 
-<!-- ── CONTRIBUTION HEATMAP CALENDAR ── -->
 <img src="https://ghchart.rshah.org/00D4FF/Kavathiya-Harsh" width="100%" alt="Harsh's GitHub Contribution Heatmap"/>
 
 <br/><br/>
 
-<!-- Area fill + animated dots — cyan on black -->
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kavathiya-Harsh&bg_color=0D0D0D&color=00D4FF&line=0284C7&point=38BDF8&area=true&area_color=00D4FF15&hide_border=true&custom_title=Harsh's%20Contribution%20Timeline&radius=6" width="100%"/>
 
 </div>
@@ -498,13 +451,9 @@ I love turning ideas into **real, working web applications** using the **MERN st
 
 <br/><br/>
 
-<!-- Fira Code looping hire message with cursor -->
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&duration=2600&pause=900&color=00D4FF&center=true&vCenter=true&repeat=true&cursor=true&width=720&lines=Actively+looking+for+Full+Stack+%2F+Frontend+roles;Remote+%7C+Hybrid+%7C+Onsite+--+PAN+India;Immediate+Joining+--+0+Days+Notice;harsh.kavathiya.cg%40gmail.com" alt="Looking"/>
 
 <br/><br/>
-
-
-<br/>
 
 <a href="mailto:harsh.kavathiya.cg@gmail.com"><img src="https://img.shields.io/badge/Email%20Me%20Now-00D4FF?style=for-the-badge&logo=gmail&logoColor=0D0D0D"/></a>
 &nbsp;
@@ -528,7 +477,6 @@ I love turning ideas into **real, working web applications** using the **MERN st
 
 <br/><br/>
 
-<!-- Refreshes every 24h automatically -->
 <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" width="72%"/>
 
 </div>
@@ -561,7 +509,6 @@ I love turning ideas into **real, working web applications** using the **MERN st
 
 <br/><br/>
 
-<!-- Fira Code subtle animated farewell loop -->
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=3500&pause=800&color=475569&center=true&vCenter=true&repeat=true&width=700&lines=Thanks+for+visiting+my+profile!;Star+my+repos+if+you+find+them+useful!;I+reply+fast+--+feel+free+to+reach+out" alt="Thanks"/>
 
 </div>
@@ -572,6 +519,6 @@ I love turning ideas into **real, working web applications** using the **MERN st
 
 <div align="center">
 
-<!-- VENOM footer — mirrors the header perfectly -->
 <img src="https://capsule-render.vercel.app/api?type=venom&color=0:0D0D0D,30:0A0F1E,60:0C1E3C,100:0D0D0D&height=200&section=footer&text=Let's%20Build%20Something%20Amazing&fontSize=28&fontColor=00D4FF&animation=twinkling&fontAlignY=44&desc=harsh.kavathiya.cg%40gmail.com%20%20%C2%B7%20%20linkedin.com%2Fin%2Fharshkavathiya%20%20%C2%B7%20%20Rajkot%2C%20India&descSize=13&descColor=475569&descAlignY=68&fontFamily=Raleway" width="100%"/>
+
 </div>
