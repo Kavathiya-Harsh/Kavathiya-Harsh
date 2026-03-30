@@ -36,49 +36,6 @@
 
 <!-- ▓▓▓▓▓▓  HERO — IDENTITY (CENTERED)  ▓▓▓▓▓▓ -->
 
-<div align="center">
-
-<!-- NAME — Bebas Neue: cinematic static display -->
-<img src="https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=58&duration=1&pause=9999999&color=FFFFFF&center=true&vCenter=true&width=540&lines=Harsh+Kavathiya" alt="Harsh Kavathiya"/>
-
-<br/>
-
-
-<img src="https://img.shields.io/badge/%F0%9F%9F%A2%20Open%20to%20Work-00D4FF?style=flat-square&logoColor=0D0D0D"/>
-
-<br/><br/>
-
-<!-- Social links -->
-<a href="https://www.linkedin.com/in/harshkavathiya"><img src="https://img.shields.io/badge/LinkedIn-0A0F1E?style=for-the-badge&logo=linkedin&logoColor=00D4FF"/></a>
-&nbsp;
-<a href="https://x.com/HarshK62610"><img src="https://img.shields.io/badge/Twitter%20%2F%20X-0A0F1E?style=for-the-badge&logo=x&logoColor=00D4FF"/></a>
-&nbsp;
-<a href="mailto:harsh.kavathiya.cg@gmail.com"><img src="https://img.shields.io/badge/Gmail-0A0F1E?style=for-the-badge&logo=gmail&logoColor=00D4FF"/></a>
-&nbsp;
-<a href="https://github.com/Kavathiya-Harsh"><img src="https://img.shields.io/badge/GitHub-0A0F1E?style=for-the-badge&logo=github&logoColor=00D4FF"/></a>
-
-<br/><br/>
-
-<!-- CTA buttons -->
-<a href="mailto:harsh.kavathiya.cg@gmail.com"><img src="https://img.shields.io/badge/Hire%20Me%20Now-00D4FF?style=for-the-badge&logo=gmail&logoColor=0D0D0D"/></a>
-&nbsp;
-<a href="https://www.linkedin.com/in/harshkavathiya"><img src="https://img.shields.io/badge/Connect-0A0F1E?style=for-the-badge&logo=linkedin&logoColor=00D4FF"/></a>
-&nbsp;
-<a href="https://github.com/Kavathiya-Harsh?tab=repositories"><img src="https://img.shields.io/badge/My%20Repos-0A0F1E?style=for-the-badge&logo=github&logoColor=00D4FF"/></a>
-
-<br/><br/>
-
-<img src="https://img.shields.io/badge/1%2B%20Year%20Experience-0A0F1E?style=for-the-badge"/>&nbsp;
-<img src="https://img.shields.io/badge/10%2B%20Projects%20Built-0A0F1E?style=for-the-badge"/>&nbsp;
-<img src="https://img.shields.io/badge/7%2B%20Technologies-0A0F1E?style=for-the-badge"/>&nbsp;
-
-</div>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D0D0D,49:00D4FF,51:00D4FF,100:0D0D0D&height=2" width="100%"/>
-
-<br/>
 
 <!-- ▓▓▓▓▓▓  ABOUT ME  ▓▓▓▓▓▓ -->
 
