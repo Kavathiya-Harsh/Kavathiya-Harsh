@@ -4,7 +4,7 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=26&duration=2000&pause=600&color=38BDF8&background=00000000&center=true&vCenter=true&width=800&height=60&lines=👋+Hey!+I'm+Harsh+Kavathiya;🚀+Full+Stack+MERN+Developer;💡+TypeScript+%26+Next.js+Engineer;🧠+DSA+Expert+in+C+%26+C%2B%2B;✨+Crafting+Clean+%26+Scalable+Code" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=26&duration=2000&pause=600&color=38BDF8&center=true&vCenter=true&multiline=false&width=800&height=60&lines=Full+Stack+MERN+Developer+%F0%9F%9A%80;TypeScript+%26+Next.js+Engineer+%F0%9F%92%A1;DSA+Expert+in+C+%26+C%2B%2B+%F0%9F%A7%A0;Building+Scalable+Web+Apps+%F0%9F%8C%90;Crafting+Clean+%26+Efficient+Code+%E2%9C%A8" alt="Typing SVG"/>
 
 <br/>
 
@@ -116,21 +116,7 @@ const developer = {
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png" width="100%"/>
 
-## 🏆 &nbsp;Achievements
-
-<br/>
-
-<div align="center">
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=Kavathiya-Harsh&theme=discord&no-frame=true&no-bg=true&margin-w=8&column=7)](https://github.com/ryo-ma/github-profile-trophy)
-
-</div>
-
-<br/>
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png" width="100%"/>
 
 ## 📈 &nbsp;Contribution Graph
 
@@ -146,17 +132,13 @@ const developer = {
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png" width="100%"/>
 
-## 🐍 &nbsp;Contribution Snake
+## 🐍 &nbsp;Contribution Activity
 
 <br/>
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Kavathiya-Harsh/Kavathiya-Harsh/output/github-contribution-grid-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Kavathiya-Harsh/Kavathiya-Harsh/output/github-contribution-grid-snake.svg"/>
-  <img alt="Snake Animation" src="https://raw.githubusercontent.com/Kavathiya-Harsh/Kavathiya-Harsh/output/github-contribution-grid-snake-dark.svg"/>
-</picture>
+<img src="https://ghchart.rshah.org/38bdf8/Kavathiya-Harsh" width="100%" alt="Harsh's Contribution Chart"/>
 
 </div>
 
@@ -211,7 +193,7 @@ const developer = {
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=16&duration=3000&pause=1000&color=93C5FD&center=true&vCenter=true&width=680&height=45&lines=🙏+Thanks+for+visiting+my+profile!;🚀+Let's+build+something+incredible+together!;⭐+Drop+a+star+if+my+work+helped+you!;💌+I+always+respond+—+let's+connect!" alt="Footer Typing"/>
+<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=16&duration=3000&pause=1000&color=93C5FD&center=true&vCenter=true&multiline=false&width=680&height=45&lines=Thanks+for+visiting+my+profile!+%F0%9F%99%8F;Let%27s+build+something+incredible+together!+%F0%9F%9A%80;Drop+a+star+if+my+work+helped+you!+%E2%AD%90;I+always+respond+%E2%80%94+let%27s+connect!+%F0%9F%92%8C" alt="Footer Typing"/>
 
 <br/><br/>
 
