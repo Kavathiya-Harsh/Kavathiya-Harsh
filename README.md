@@ -1,4 +1,4 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:020817,30:0f172a,65:1e3a5f,100:020817&height=300&section=header&text=Harsh%20Kavathiya&fontSize=82&fontColor=38bdf8&animation=twinkling&fontAlignY=40&desc=Full%20Stack%20Developer%20%7C%20MERN%20%7C%20C%2B%2B%20%7C%20Open%20Source%20Contributor&descAlignY=62&descSize=18&descColor=93c5fd&stroke=38bdf8&strokeWidth=1"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:020817,30:0f172a,65:1e3a5f,100:020817&height=300&section=header&text=Harsh%20Kavathiya&fontSize=82&fontColor=38bdf8&animation=twinkling&fontAlignY=40&desc=Passionate%20Full%20Stack%20Developer%20%E2%80%A2%20MERN%20Stack%20%E2%80%A2%20TypeScript%20%E2%80%A2%20Next.js%20%E2%80%A2%20C%2B%2B%20%E2%80%A2%20Open%20Source%20Contributor&descAlignY=62&descSize=17&descColor=93c5fd&stroke=38bdf8&strokeWidth=1"/>
 
 <div align="center">
 
@@ -152,9 +152,37 @@ const developer = {
 
 <div align="center">
 
-[![Portfolio](https://github-readme-stats.vercel.app/api/pin/?username=Kavathiya-Harsh&repo=Portfolio&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=e0f2fe)](https://github.com/Kavathiya-Harsh/Portfolio)
-
-</div>
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🌐 Portfolio Website</h3>
+      <p>A modern, responsive personal portfolio showcasing my projects, skills, and professional journey. Built with performance and aesthetics in mind.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
+        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=38bdf8"/>
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+        <img src="https://img.shields.io/badge/Tailwind-0f172a?style=flat-square&logo=tailwindcss&logoColor=38bdf8"/>
+      </p>
+      <a href="https://github.com/Kavathiya-Harsh/Portfolio">
+        <img src="https://img.shields.io/badge/View_Code-0f172a?style=for-the-badge&logo=github&logoColor=38bdf8"/>
+      </a>&nbsp;
+      <a href="https://harshkavathiya.vercel.app">
+        <img src="https://img.shields.io/badge/Live_Demo-38bdf8?style=for-the-badge&logo=vercel&logoColor=020817"/>
+      </a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🛠️ More Projects Coming Soon</h3>
+      <p>Currently working on exciting new projects with MERN Stack, TypeScript, and Next.js. Stay tuned for updates!</p>
+      <p>
+        <img src="https://img.shields.io/badge/MongoDB-13aa52?style=flat-square&logo=mongodb&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Express-0f172a?style=flat-square&logo=express&logoColor=38bdf8"/>
+        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=38bdf8"/>
+        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"/>
+      </p>
+      <img src="https://img.shields.io/badge/In_Progress-1e3a5f?style=for-the-badge&logo=githubactions&logoColor=38bdf8"/>
+    </td>
+  </tr>
+</table>
 
 <br/>
 
