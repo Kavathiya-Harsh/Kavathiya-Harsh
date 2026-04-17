@@ -1,85 +1,69 @@
-<!-- =====================================================
-  HARSH KAVATHIYA — GITHUB PROFILE README
-  Fonts  : Bebas Neue (name) · Fira Code (mono/roles)
-           Raleway (headers)
-  Theme  : Deep Space Black + Electric Cyan
-  FX     : Venom waves · Typing SVGs · Tilt header
-           Snake · Activity graph · Profile cards
-           Trophies · Streak · Live badges · Sparkline
-====================================================== -->
-
-<!-- ▓▓▓▓▓▓  HEADER — VENOM WAVE + TILT ANIMATION  ▓▓▓▓▓▓ -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:020817,30:0f172a,65:1e3a5f,100:020817&height=300&section=header&text=Harsh%20Kavathiya&fontSize=82&fontColor=38bdf8&animation=twinkling&fontAlignY=40&desc=Full%20Stack%20Developer%20%7C%20MERN%20%7C%20C%2B%2B%20%7C%20Open%20Source%20Contributor&descAlignY=62&descSize=18&descColor=93c5fd&stroke=38bdf8&strokeWidth=1"/>
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0D0D0D,30:0A0F1E,60:0C1E3C,100:0D0D0D&height=280&section=header&text=HARSH%20KAVATHIYA&fontSize=64&fontColor=FFFFFF&animation=twinkling&fontAlignY=42&stroke=00D4FF&strokeWidth=2&desc=Full%20Stack%20Developer%20%20%C2%B7%20%20MERN%20%20%C2%B7%20%20React%20%20%C2%B7%20%20JavaScript%20%20%C2%B7%20%20Open%20to%20Work&descAlignY=64&descSize=15&descColor=00D4FF&fontFamily=Bebas%20Neue" width="100%"/>
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=26&duration=2000&pause=600&color=38BDF8&background=00000000&center=true&vCenter=true&width=800&height=60&lines=👋+Hey!+I'm+Harsh+Kavathiya;🚀+Full+Stack+MERN+Developer;💡+TypeScript+%26+Next.js+Engineer;🧠+DSA+Expert+in+C+%26+C%2B%2B;✨+Crafting+Clean+%26+Scalable+Code" alt="Typing SVG"/>
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=700&size=18&duration=3000&pause=700&color=00D4FF&center=true&vCenter=true&multiline=false&repeat=true&width=820&lines=Welcome+to+my+GitHub+Profile!;I+build+clean%2C+scalable+web+applications;React+%7C+Node.js+%7C+MongoDB+%7C+JavaScript;Clean+Code+%C2%B7+Fast+Delivery+%C2%B7+Always+Learning;Let%27s+build+something+amazing+together!" alt="Greeting"/>
+[![Open To Work](https://img.shields.io/badge/✅_Open_To_Work-38bdf8?style=for-the-badge&labelColor=0f172a&color=38bdf8&logoColor=020817)](https://github.com/Kavathiya-Harsh)&nbsp;
+[![Profile Views](https://komarev.com/ghpvc/?username=Kavathiya-Harsh&style=for-the-badge&color=1e3a5f&labelColor=0f172a&label=Profile+Views&abbreviated=true)](https://github.com/Kavathiya-Harsh)&nbsp;
+[![Followers](https://img.shields.io/github/followers/Kavathiya-Harsh?style=for-the-badge&color=1e3a5f&labelColor=0f172a&logo=github&logoColor=38bdf8&label=Followers)](https://github.com/Kavathiya-Harsh)&nbsp;
+[![Stars](https://img.shields.io/github/stars/Kavathiya-Harsh?style=for-the-badge&color=1e3a5f&labelColor=0f172a&logo=github&logoColor=93c5fd&label=Stars)](https://github.com/Kavathiya-Harsh)
+
+<br/>
+
+</div>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png" width="100%"/>
+
+## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28px"/> &nbsp;About Me
+
+<br/>
+
+<table width="100%">
+<tr>
+<td width="55%" valign="top">
+
+<br/>
+
+```typescript
+const developer = {
+  name     : "Harsh Kavathiya",
+  title    : "Full Stack Developer",
+  location : "India 🇮🇳",
+  stack    : {
+    languages : ["C", "C++", "JavaScript", "TypeScript"],
+    frontend  : ["React", "Next.js", "HTML5", "CSS3"],
+    backend   : ["Node.js", "Express.js"],
+    database  : ["MongoDB", "MySQL"],
+  },
+  learning : ["System Design", "Next.js 15", "DevOps"],
+  status   : "Open to Work ✅",
+  email    : "harsh.kavathiya.cg@gmail.com",
+  site     : "harshkavathiya.vercel.app",
+  quote    : "Code is craft. Ship with pride.",
+} as const;
+```
+
+<br/>
+
+🔭 &nbsp;Building **production-grade MERN** applications  
+🌱 &nbsp;Mastering **Next.js · TypeScript · System Design**  
+🧠 &nbsp;Solving DSA challenges in **C++** every day  
+🤝 &nbsp;Open to **Collaboration & Freelance** opportunities  
+☕ &nbsp;Powered by **Coffee + Clean Code + Curiosity**
+
+</td>
+<td width="45%" align="center" valign="middle">
+
+<img src="https://media.giphy.com/media/L8K62iTDkzGX6/giphy.gif" width="90%" alt="Dev GIF"/>
 
 <br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=Kavathiya-Harsh&color=00D4FF&style=flat-square&label=Profile+Views&labelColor=0A0F1E"/>
-&nbsp;
-<img src="https://img.shields.io/github/followers/Kavathiya-Harsh?label=Followers&style=flat-square&color=00D4FF&labelColor=0A0F1E&logo=github"/>
-&nbsp;
-<img src="https://img.shields.io/github/stars/Kavathiya-Harsh?label=Stars+Earned&style=flat-square&color=00D4FF&labelColor=0A0F1E&logo=github"/>
-
-</div>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D0D0D,49:00D4FF,51:00D4FF,100:0D0D0D&height=2" width="100%"/>
-
-<br/>
-
-<!-- ▓▓▓▓▓▓  HERO — IDENTITY (CENTERED)  ▓▓▓▓▓▓ -->
-
-
-<!-- ▓▓▓▓▓▓  ABOUT ME  ▓▓▓▓▓▓ -->
-
-<div align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=800&size=26&duration=1&pause=9999999&color=FFFFFF&center=true&vCenter=true&width=280&lines=About+Me" alt="About Me"/>
-</div>
-
-<br/>
-
-<table align="center" width="92%" border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="50%" valign="top">
-
-### 🙋 About Me
-
-I'm **Harsh Kavathiya**, a passionate **Full Stack Developer** from **Rajkot, Gujarat, India** 🇮🇳
-
-I love turning ideas into **real, working web applications** using the **MERN stack**. I write clean, maintainable code and I'm obsessed with building things that are both **functional and beautiful**.
-
-**Currently focused on:**
-
-- 🔨 Building production-grade MERN apps
-- ⚛️ Pixel-perfect React UIs
-- 📘 DSA mastery in C++
-- 🌐 Open-source contributions
-- 📡 Learning system design
-
-</td>
-<td width="4%"></td>
-<td width="46%" valign="top">
-
-### ⚡ Quick Facts
-
-| | |
-|:--|:--|
-| 🌍 | Rajkot, Gujarat, India |
-| 💻 | MERN Stack Developer |
-| 🎯 | Open to Work — Immediate |
-| 🧠 | Problem Solver & Fast Learner |
-| 🤝 | Team Player & Self Starter |
-| ☕ | Debug better with chai in hand |
-| 🌙 | Night owl coder — 10 PM to 2 AM |
-| 🎮 | Gaming sharpens my logic |
-| 🇮🇳 | Putting Rajkot on the tech map |
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kavathiya-Harsh&langs_count=6&layout=compact&hide_border=true&title_color=38bdf8&text_color=e0f2fe&bg_color=0f172a" width="95%" alt="Top Languages"/>
 
 </td>
 </tr>
@@ -87,192 +71,42 @@ I love turning ideas into **real, working web applications** using the **MERN st
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D0D0D,49:00D4FF,51:00D4FF,100:0D0D0D&height=2" width="100%"/>
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png" width="100%"/>
+
+## ⚙️ &nbsp;Tech Stack
 
 <br/>
 
-<!-- ▓▓▓▓▓▓  TECH STACK — ANIMATED SKILL ICONS  ▓▓▓▓▓▓ -->
-
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=800&size=26&duration=1&pause=9999999&color=FFFFFF&center=true&vCenter=true&width=280&lines=Tech+Stack" alt="Tech Stack"/>
-
-<br/><br/>
-
-<img src="https://skillicons.dev/icons?i=c,cpp,js,html,css,react,nodejs,express,mongodb,git,github,vscode&theme=dark&perline=12" width="86%"/>
-
-<br/><br/>
-
-<table border="0" width="90%" cellspacing="0" cellpadding="10">
-<tr>
-<td align="center" valign="top">
-
-**🖥️ Languages**
-
-![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-
-</td>
-<td align="center" valign="top">
-
-**🎨 Frontend**
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-
-</td>
-<td align="center" valign="top">
-
-**⚙️ Backend & DB**
-
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000?style=flat-square&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-
-</td>
-<td align="center" valign="top">
-
-**🧰 DevTools**
-
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
-
-</td>
-</tr>
-</table>
+<img src="https://skillicons.dev/icons?i=c,cpp,js,ts,html,css,react,nextjs,tailwind,nodejs,express,mongodb,mysql,git,github,vscode,postman,vercel,linux,figma&theme=dark&perline=10"/>
 
 </div>
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D0D0D,49:00D4FF,51:00D4FF,100:0D0D0D&height=2" width="100%"/>
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png" width="100%"/>
+
+## 📊 &nbsp;GitHub Stats
 
 <br/>
 
-<!-- ▓▓▓▓▓▓  SKILL LEVELS  ▓▓▓▓▓▓ -->
-
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=800&size=26&duration=1&pause=9999999&color=FFFFFF&center=true&vCenter=true&width=280&lines=Skill+Levels" alt="Skill Levels"/>
-
-<br/><br/>
-
-<img src="https://raw.githubusercontent.com/Kavathiya-Harsh/Kavathiya-Harsh/main/skills.svg" width="100%" alt="Skill Levels"/>
+<img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=Kavathiya-Harsh&show_icons=true&count_private=true&hide_border=true&title_color=38bdf8&icon_color=38bdf8&text_color=e0f2fe&bg_color=0f172a&include_all_commits=true&rank_icon=github" alt="GitHub Stats"/>
+<img width="49%" height="195px" src="https://github-readme-streak-stats.herokuapp.com/?user=Kavathiya-Harsh&hide_border=true&background=0f172a&ring=38bdf8&fire=60a5fa&currStreakLabel=38bdf8&sideLabels=e0f2fe&dates=94a3b8&stroke=38bdf8&currStreakNum=ffffff&sideNums=ffffff" alt="GitHub Streak"/>
 
 </div>
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D0D0D,49:00D4FF,51:00D4FF,100:0D0D0D&height=2" width="100%"/>
-
-<br/>
-
-<!-- ▓▓▓▓▓▓  WHAT I BUILD  ▓▓▓▓▓▓ -->
-
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=800&size=26&duration=1&pause=9999999&color=FFFFFF&center=true&vCenter=true&width=280&lines=What+I+Build" alt="What I Build"/>
-
-<br/><br/>
-
-<table width="92%" border="0" cellspacing="8" cellpadding="0">
-<tr>
-<td width="50%" valign="top" align="left">
-
-### 🖥️ Frontend Applications
-
-✅ &nbsp; Responsive multi-page React apps
-✅ &nbsp; Single Page Applications (SPA)
-✅ &nbsp; Reusable component libraries
-✅ &nbsp; Mobile-first UI / UX design
-✅ &nbsp; CSS animations & transitions
-
-</td>
-<td width="50%" valign="top" align="left">
-
-### ⚙️ Backend & APIs
-
-✅ &nbsp; RESTful APIs with Node + Express
-✅ &nbsp; JWT Auth & Authorization flows
-✅ &nbsp; MongoDB schema + data modeling
-✅ &nbsp; CRUD operations with Mongoose
-✅ &nbsp; Version-controlled Git workflows
-
-</td>
-</tr>
-<tr><td colspan="2"><br/></td></tr>
-<tr>
-<td width="50%" valign="top" align="left">
-
-### 🧩 Full Stack MERN Projects
-
-✅ &nbsp; End-to-end MERN applications
-✅ &nbsp; User auth systems (login / register)
-✅ &nbsp; Dashboard & e-commerce UIs
-✅ &nbsp; Real-time features via APIs
-✅ &nbsp; Deployed, production-ready apps
-
-</td>
-<td width="50%" valign="top" align="left">
-
-### 📐 CS Foundations
-
-✅ &nbsp; Data Structures & Algorithms (C++)
-✅ &nbsp; OOP concepts & design patterns
-✅ &nbsp; Problem solving — LeetCode / HackerRank
-✅ &nbsp; Clean code & best practices
-✅ &nbsp; Debugging & performance tuning
-
-</td>
-</tr>
-</table>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Kavathiya-Harsh&theme=github_dark" width="98%" alt="Profile Details"/>
 
 </div>
 
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D0D0D,49:00D4FF,51:00D4FF,100:0D0D0D&height=2" width="100%"/>
-
-<br/>
-
-<!-- ▓▓▓▓▓▓  GITHUB ANALYTICS — ANIMATED STAT CARDS  ▓▓▓▓▓▓ -->
-
 <div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=800&size=26&duration=1&pause=9999999&color=FFFFFF&center=true&vCenter=true&width=320&lines=GitHub+Analytics" alt="GitHub Analytics"/>
-
-<br/><br/>
-
-<img src="https://github-readme-stats.vercel.app/api?username=Kavathiya-Harsh&show_icons=true&count_private=true&hide_border=true&bg_color=0D0D0D&title_color=00D4FF&icon_color=00D4FF&text_color=E2E8F0&ring_color=00D4FF&include_all_commits=true" height="180"/>
-&nbsp;
-<img src="https://github-readme-streak-stats.herokuapp.com?user=Kavathiya-Harsh&hide_border=true&background=0D0D0D&stroke=00D4FF&ring=00D4FF&fire=38BDF8&currStreakLabel=00D4FF&sideLabels=E2E8F0&dates=475569&currStreakNum=FFFFFF&sideNums=00D4FF" height="180"/>
-
-<br/><br/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kavathiya-Harsh&layout=donut&hide_border=true&bg_color=0D0D0D&title_color=00D4FF&text_color=E2E8F0&langs_count=8" height="200"/>
-
-</div>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D0D0D,49:00D4FF,51:00D4FF,100:0D0D0D&height=2" width="100%"/>
-
-<br/>
-
-<!-- ▓▓▓▓▓▓  PROFILE SUMMARY — 4 ANIMATED CARDS  ▓▓▓▓▓▓ -->
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=800&size=26&duration=1&pause=9999999&color=FFFFFF&center=true&vCenter=true&width=320&lines=Profile+Summary" alt="Profile Summary"/>
-
-<br/><br/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Kavathiya-Harsh&theme=github_dark" width="96%"/>
-
-<br/>
 
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Kavathiya-Harsh&theme=github_dark" width="32%"/>
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Kavathiya-Harsh&theme=github_dark" width="32%"/>
@@ -282,200 +116,105 @@ I love turning ideas into **real, working web applications** using the **MERN st
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D0D0D,49:00D4FF,51:00D4FF,100:0D0D0D&height=2" width="100%"/>
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png" width="100%"/>
+
+## 🏆 &nbsp;Achievements
 
 <br/>
 
 <div align="center">
 
-<!-- Auto-switches dark/light, fully animated SVG snake -->
+[![trophy](https://github-profile-trophy.vercel.app/?username=Kavathiya-Harsh&theme=discord&no-frame=true&no-bg=true&margin-w=8&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+
+</div>
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png" width="100%"/>
+
+## 📈 &nbsp;Contribution Graph
+
+<br/>
+
+<div align="center">
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Kavathiya-Harsh&custom_title=Harsh's%20Contribution%20Timeline&bg_color=0f172a&color=38bdf8&line=60a5fa&point=38bdf8&area=true&area_color=1e3a5f&hide_border=true&radius=8)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+</div>
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png" width="100%"/>
+
+## 🐍 &nbsp;Contribution Snake
+
+<br/>
+
+<div align="center">
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Kavathiya-Harsh/Kavathiya-Harsh/output/github-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Kavathiya-Harsh/Kavathiya-Harsh/output/github-snake.svg"/>
-  <img src="https://raw.githubusercontent.com/Kavathiya-Harsh/Kavathiya-Harsh/output/github-snake-dark.svg" width="100%" alt="Contribution Snake — enable GitHub Actions to activate"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Kavathiya-Harsh/Kavathiya-Harsh/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Kavathiya-Harsh/Kavathiya-Harsh/output/github-contribution-grid-snake.svg"/>
+  <img alt="Snake Animation" src="https://raw.githubusercontent.com/Kavathiya-Harsh/Kavathiya-Harsh/output/github-contribution-grid-snake-dark.svg"/>
 </picture>
 
-> ⚙️ **One-time setup:** Go to your `Kavathiya-Harsh` repo → **Actions** → search **Generate Snake** → enable & run it once.
+</div>
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png" width="100%"/>
+
+## 💼 &nbsp;Featured Projects
+
+<br/>
+
+<div align="center">
+
+[![Portfolio](https://github-readme-stats.vercel.app/api/pin/?username=Kavathiya-Harsh&repo=Portfolio&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=e0f2fe)](https://github.com/Kavathiya-Harsh/Portfolio)
 
 </div>
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D0D0D,49:00D4FF,51:00D4FF,100:0D0D0D&height=2" width="100%"/>
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png" width="100%"/>
+
+## 🌐 &nbsp;Let's Connect
 
 <br/>
-
-<!-- ▓▓▓▓▓▓  ACTIVITY GRAPH — ANIMATED AREA CHART  ▓▓▓▓▓▓ -->
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=800&size=26&duration=1&pause=9999999&color=FFFFFF&center=true&vCenter=true&width=320&lines=Contribution+Graph" alt="Graph"/>
-
-<br/><br/>
-
-<img src="https://ghchart.rshah.org/00D4FF/Kavathiya-Harsh" width="100%" alt="Harsh's GitHub Contribution Heatmap"/>
-
-<br/><br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Kavathiya-Harsh&bg_color=0D0D0D&color=00D4FF&line=0284C7&point=38BDF8&area=true&area_color=00D4FF15&hide_border=true&custom_title=Harsh's%20Contribution%20Timeline&radius=6" width="100%"/>
-
-</div>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D0D0D,49:00D4FF,51:00D4FF,100:0D0D0D&height=2" width="100%"/>
-
-<br/>
-
-<!-- ▓▓▓▓▓▓  LEARNING & GOALS  ▓▓▓▓▓▓ -->
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=800&size=26&duration=1&pause=9999999&color=FFFFFF&center=true&vCenter=true&width=300&lines=Learning+%26+Goals" alt="Goals"/>
-
-<br/><br/>
-
-<table width="90%" border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="50%" valign="top">
-
-### 📚 Currently Learning
-
-&nbsp;
-
-🔵 &nbsp; Advanced React — Redux · Context · Hooks
-🔵 &nbsp; TypeScript for scalable codebases
-🔵 &nbsp; System Design fundamentals
-🔵 &nbsp; Docker & DevOps basics
-🔵 &nbsp; DSA — Trees · Graphs · DP in C++
-
-</td>
-<td width="50%" valign="top">
-
-### 🎯 2025–2026 Goals
-
-&nbsp;
-
-🟢 &nbsp; Land first full-time dev role
-🟢 &nbsp; Build & deploy 5+ full-stack apps
-🟢 &nbsp; Contribute to open-source repos
-🟢 &nbsp; Reach 100+ GitHub contributions
-🟢 &nbsp; Master system design interviews
-
-</td>
-</tr>
-</table>
-
-</div>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D0D0D,49:00D4FF,51:00D4FF,100:0D0D0D&height=2" width="100%"/>
-
-<br/>
-
-<!-- ▓▓▓▓▓▓  SOFT SKILLS  ▓▓▓▓▓▓ -->
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=500&size=26&duration=1&pause=9999999&color=FFFFFF&center=true&vCenter=true&width=140&lines=Soft+Skills" alt="Soft Skills"/>
-
-<br/><br/>
-
-| 💡 Skill | 📝 What It Means for You |
-|:---------|:------------------------|
-| 🔍 **Problem Solver** | Breaks complex problems into clean, logical solutions |
-| ⚡ **Fast Learner** | Picks up new tech rapidly through hands-on practice |
-| 🤝 **Team Player** | Communicates clearly in Agile & team environments |
-| 🎯 **Detail Oriented** | Writes readable, well-structured, commented code |
-| 🕐 **Deadline Driven** | Consistently delivers quality work on time |
-| 🏗️ **Self Starter** | Takes full ownership and drives tasks independently |
-| 💬 **Open to Feedback** | Welcomes code reviews and improves from critique |
-
-</div>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D0D0D,49:00D4FF,51:00D4FF,100:0D0D0D&height=2" width="100%"/>
-
-<br/>
-
-<!-- ▓▓▓▓▓▓  HIRE ME — ANIMATED TYPING + TABLE  ▓▓▓▓▓▓ -->
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=800&size=26&duration=1&pause=9999999&color=FFFFFF&center=true&vCenter=true&width=200&lines=Hire+Me" alt="Hire Me"/>
-
-<br/><br/>
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&duration=2600&pause=900&color=00D4FF&center=true&vCenter=true&repeat=true&cursor=true&width=720&lines=Actively+looking+for+Full+Stack+%2F+Frontend+roles;Remote+%7C+Hybrid+%7C+Onsite+--+PAN+India;Immediate+Joining+--+0+Days+Notice;harsh.kavathiya.cg%40gmail.com" alt="Looking"/>
-
-<br/><br/>
-
-<a href="mailto:harsh.kavathiya.cg@gmail.com"><img src="https://img.shields.io/badge/Email%20Me%20Now-00D4FF?style=for-the-badge&logo=gmail&logoColor=0D0D0D"/></a>
-&nbsp;
-<a href="https://www.linkedin.com/in/harshkavathiya"><img src="https://img.shields.io/badge/LinkedIn-0A0F1E?style=for-the-badge&logo=linkedin&logoColor=00D4FF"/></a>
-&nbsp;
-<a href="https://x.com/HarshK62610"><img src="https://img.shields.io/badge/Twitter-0A0F1E?style=for-the-badge&logo=x&logoColor=00D4FF"/></a>
-
-</div>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D0D0D,49:00D4FF,51:00D4FF,100:0D0D0D&height=2" width="100%"/>
-
-<br/>
-
-<!-- ▓▓▓▓▓▓  QUOTE — DAILY ANIMATED CARD  ▓▓▓▓▓▓ -->
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=800&size=26&duration=1&pause=9999999&color=FFFFFF&center=true&vCenter=true&width=240&lines=Dev+Quote" alt="Quote"/>
-
-<br/><br/>
-
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" width="72%"/>
-
-</div>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D0D0D,49:00D4FF,51:00D4FF,100:0D0D0D&height=2" width="100%"/>
-
-<br/>
-
-<!-- ▓▓▓▓▓▓  CONNECT  ▓▓▓▓▓▓ -->
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=800&size=26&duration=1&pause=9999999&color=FFFFFF&center=true&vCenter=true&width=200&lines=Connect" alt="Connect"/>
-
-<br/><br/>
-
-<a href="https://www.linkedin.com/in/harshkavathiya">
-  <img src="https://img.shields.io/badge/LinkedIn-Harsh%20Kavathiya-00D4FF?style=for-the-badge&logo=linkedin&logoColor=0D0D0D"/>
-</a>
-&nbsp;
-<a href="https://x.com/HarshK62610">
-  <img src="https://img.shields.io/badge/Twitter-HarshK62610-00D4FF?style=for-the-badge&logo=x&logoColor=0D0D0D"/>
-</a>
-&nbsp;
-<a href="mailto:harsh.kavathiya.cg@gmail.com">
-  <img src="https://img.shields.io/badge/Email-harsh.kavathiya.cg-00D4FF?style=for-the-badge&logo=gmail&logoColor=0D0D0D"/>
+<a href="https://www.linkedin.com/in/harsh-kavathiya" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" height="42"/>
+</a>&nbsp;&nbsp;
+<a href="https://twitter.com/harshk62610" target="_blank">
+  <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" height="42"/>
+</a>&nbsp;&nbsp;
+<a href="mailto:harsh.kavathiya.cg@gmail.com" target="_blank">
+  <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" height="42"/>
+</a>&nbsp;&nbsp;
+<a href="https://harshkavathiya.vercel.app" target="_blank">
+  <img src="https://img.shields.io/badge/Portfolio-38bdf8?style=for-the-badge&logo=vercel&logoColor=020817" height="42"/>
 </a>
 
-<br/><br/>
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=3500&pause=800&color=475569&center=true&vCenter=true&repeat=true&width=700&lines=Thanks+for+visiting+my+profile!;Star+my+repos+if+you+find+them+useful!;I+reply+fast+--+feel+free+to+reach+out" alt="Thanks"/>
-
 </div>
 
 <br/>
 
-<!-- ▓▓▓▓▓▓  FOOTER — VENOM WAVE MATCHING HEADER  ▓▓▓▓▓▓ -->
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png" width="100%"/>
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0D0D0D,30:0A0F1E,60:0C1E3C,100:0D0D0D&height=200&section=footer&text=Let's%20Build%20Something%20Amazing&fontSize=28&fontColor=00D4FF&animation=twinkling&fontAlignY=44&desc=harsh.kavathiya.cg%40gmail.com%20%20%C2%B7%20%20linkedin.com%2Fin%2Fharshkavathiya%20%20%C2%B7%20%20Rajkot%2C%20India&descSize=13&descColor=475569&descAlignY=68&fontFamily=Raleway" width="100%"/>
+### 💬 &nbsp;Dev Wisdom
+
+[![Dev Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)](https://github.com/piyushsuthar/github-readme-quotes)
+
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=16&duration=3000&pause=1000&color=93C5FD&center=true&vCenter=true&width=680&height=45&lines=🙏+Thanks+for+visiting+my+profile!;🚀+Let's+build+something+incredible+together!;⭐+Drop+a+star+if+my+work+helped+you!;💌+I+always+respond+—+let's+connect!" alt="Footer Typing"/>
+
+<br/><br/>
 
 </div>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:020817,30:0f172a,65:1e3a5f,100:020817&height=160&section=footer&animation=twinkling"/>
