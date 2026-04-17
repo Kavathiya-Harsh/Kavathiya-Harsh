@@ -2,35 +2,39 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 */12 * * *"   # Runs every 12 hours
-  workflow_dispatch:           # Manual trigger anytime
+    - cron: "0 */12 * * *"     # Runs every 12 hours automatically
+  workflow_dispatch:             # Allows manual trigger from Actions tab
   push:
     branches:
-      - main                   # Trigger on main branch
-      - master                 # Trigger on master branch
+      - main
+      - master
+
+permissions:
+  contents: write              # Required to push to the output branch
 
 jobs:
   generate:
-    permissions:
-      contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 10        # Increased from 5 to prevent timeout failures
+    timeout-minutes: 15
 
     steps:
-      - name: Generate Snake SVG
+      - name: Generate Light & Dark Snake SVG
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Push Snake SVG to Output Branch
+      - name: Push Snake SVG to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
-          keep_history: true   # Prevents wiping other files in output branch
-          jekyll: false        # Prevents Jekyll from corrupting SVG files
+          keep_history: true   # Keep existing files — never wipe
+          jekyll: false        # Disable Jekyll so SVGs are served raw
+          commit_message: "chore: regenerate contribution snake"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
