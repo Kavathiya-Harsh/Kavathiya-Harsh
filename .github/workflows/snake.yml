@@ -41,19 +41,19 @@ jobs:
                   svg = f.read()
               
               # Add rx/ry rounded corners to cells
-              svg = re.sub(r'\.c\{([^}]+)\}', r'.c{\1;rx:3px;ry:3px}', svg)
+              svg = re.sub(r'\.c\{([^}]+)\}', r'.c{\1;rx:2.5px;ry:2.5px}', svg)
               
-              # Add glow to snake
-              svg = re.sub(r'\.s\{([^}]+)\}', r'.s{\1;filter:drop-shadow(0 0 6px var(--cs)) drop-shadow(0 0 2px var(--cs))}', svg)
+              # Add glow to snake (sharper, tight)
+              svg = re.sub(r'\.s\{([^}]+)\}', r'.s{\1;filter:drop-shadow(0 0 3px var(--cs))}', svg)
               
-              # Add glow to active keyframe cells
-              svg = re.sub(r'([0-9.]+)%\{fill:(var\(--c[1-4]\))\}', r'\1%{fill:\2;filter:drop-shadow(0 0 5px \2) drop-shadow(0 0 2px \2)}', svg)
+              # Add glow to active keyframe cells (sharper, tight)
+              svg = re.sub(r'([0-9.]+)%\{fill:(var\(--c[1-4]\))\}', r'\1%{fill:\2;filter:drop-shadow(0 0 2px \2)}', svg)
               
               # Remove glow when cell is eaten/empty
               svg = re.sub(r'([0-9.]+)%,100%\{fill:var\(--ce\)\}', r'\1%,100%{fill:var(--ce);filter:none}', svg)
               
-              # Add glow to initial classes
-              svg = re.sub(r'\.c\.(c[0-9a-z]+)\{fill:(var\(--c[1-4]\));', r'.c.\1{fill:\2;filter:drop-shadow(0 0 5px \2) drop-shadow(0 0 2px \2);', svg)
+              # Add glow to initial classes (sharper, tight)
+              svg = re.sub(r'\.c\.(c[0-9a-z]+)\{fill:(var\(--c[1-4]\));', r'.c.\1{fill:\2;filter:drop-shadow(0 0 2px \2);', svg)
               
               with open(path, 'w', encoding='utf-8') as f:
                   f.write(svg)
