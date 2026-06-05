@@ -1,23 +1,23 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:020817,30:0f172a,65:1e3a5f,100:020817&height=300&section=header&text=Harsh%20Kavathiya&fontSize=82&fontColor=38bdf8&animation=twinkling&fontAlignY=40&desc=Passionate%20Full%20Stack%20Developer%20%E2%80%A2%20MERN%20Stack%20%E2%80%A2%20TypeScript%20%E2%80%A2%20Next.js%20%E2%80%A2%20C%2B%2B%20%E2%80%A2%20Open%20Source%20Contributor&descAlignY=62&descSize=17&descColor=93c5fd&stroke=38bdf8&strokeWidth=1"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:020817,25:0b1120,50:0f172a,75:1e3a5f,100:38bdf8&height=300&section=header&text=Harsh%20Kavathiya&fontSize=82&fontColor=38bdf8&animation=twinkling&fontAlignY=38&desc=Full%20Stack%20Developer%20%E2%80%A2%20MERN%20Stack%20%E2%80%A2%20TypeScript%20%E2%80%A2%20Next.js%20%E2%80%A2%20C%2B%2B%20%E2%80%A2%20Open%20Source&descAlignY=60&descSize=18&descColor=818cf8&stroke=38bdf8&strokeWidth=1"/>
 
 <div align="center">
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=26&duration=2000&pause=600&color=38BDF8&center=true&vCenter=true&multiline=false&width=800&height=60&lines=Full+Stack+MERN+Developer+%F0%9F%9A%80;TypeScript+%26+Next.js+Engineer+%F0%9F%92%A1;DSA+Expert+in+C+%26+C%2B%2B+%F0%9F%A7%A0;Building+Scalable+Web+Apps+%F0%9F%8C%90;Crafting+Clean+%26+Efficient+Code+%E2%9C%A8" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=700&size=28&duration=2500&pause=800&color=38BDF8&center=true&vCenter=true&multiline=false&width=820&height=65&lines=%E2%9A%A1+Full+Stack+MERN+Developer;%F0%9F%92%8E+TypeScript+%26+Next.js+Engineer;%F0%9F%A7%A0+DSA+Expert+in+C+%26+C%2B%2B;%F0%9F%8C%90+Building+Scalable+Web+Applications;%E2%9C%A8+Crafting+Clean+%26+Efficient+Code" alt="Typing SVG"/>
 
 <br/>
 
-[![Open To Work](https://img.shields.io/badge/✅_Open_To_Work-38bdf8?style=for-the-badge&labelColor=0f172a&color=38bdf8&logoColor=020817)](https://github.com/Kavathiya-Harsh)&nbsp;
-[![Profile Views](https://komarev.com/ghpvc/?username=Kavathiya-Harsh&style=for-the-badge&color=1e3a5f&labelColor=0f172a&label=Profile+Views&abbreviated=true)](https://github.com/Kavathiya-Harsh)&nbsp;
-[![Followers](https://img.shields.io/github/followers/Kavathiya-Harsh?style=for-the-badge&color=1e3a5f&labelColor=0f172a&logo=github&logoColor=38bdf8&label=Followers)](https://github.com/Kavathiya-Harsh)&nbsp;
-[![Stars](https://img.shields.io/github/stars/Kavathiya-Harsh?style=for-the-badge&color=1e3a5f&labelColor=0f172a&logo=github&logoColor=93c5fd&label=Stars)](https://github.com/Kavathiya-Harsh)
+[![Open To Work](https://img.shields.io/badge/✅_Open_To_Work-38bdf8?style=for-the-badge&labelColor=0b1120&color=38bdf8)](https://github.com/Kavathiya-Harsh)&nbsp;
+[![Profile Views](https://komarev.com/ghpvc/?username=Kavathiya-Harsh&style=for-the-badge&color=818cf8&labelColor=0b1120&label=Profile+Views&abbreviated=true)](https://github.com/Kavathiya-Harsh)&nbsp;
+[![Followers](https://img.shields.io/github/followers/Kavathiya-Harsh?style=for-the-badge&color=818cf8&labelColor=0b1120&logo=github&logoColor=38bdf8&label=Followers)](https://github.com/Kavathiya-Harsh)&nbsp;
+[![Stars](https://img.shields.io/github/stars/Kavathiya-Harsh?style=for-the-badge&color=818cf8&labelColor=0b1120&logo=github&logoColor=38bdf8&label=Stars)](https://github.com/Kavathiya-Harsh)
 
 <br/>
 
 </div>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:020817,50:0f172a,100:020817&height=2"/>
 
 ## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28px"/> &nbsp;About Me
 
@@ -30,7 +30,7 @@
 <br/>
 
 ```typescript
-const developer = {
+const harsh = {
   name     : "Harsh Kavathiya",
   title    : "Full Stack Developer",
   location : "India 🇮🇳",
@@ -63,7 +63,7 @@ const developer = {
 
 <br/><br/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kavathiya-Harsh&langs_count=6&layout=compact&hide_border=true&title_color=38bdf8&text_color=e0f2fe&bg_color=0f172a" width="95%" alt="Top Languages"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kavathiya-Harsh&langs_count=6&layout=compact&hide_border=true&title_color=38bdf8&text_color=e2e8f0&bg_color=0b1120&icon_color=818cf8" width="95%" alt="Top Languages"/>
 
 </td>
 </tr>
@@ -71,7 +71,7 @@ const developer = {
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:020817,50:0f172a,100:020817&height=2"/>
 
 ## ⚙️ &nbsp;Tech Stack
 
@@ -79,13 +79,44 @@ const developer = {
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=c,cpp,js,ts,html,css,react,nextjs,tailwind,nodejs,express,mongodb,mysql,git,github,vscode,postman,vercel,linux,figma&theme=dark&perline=10"/>
+<table>
+<tr>
+<td align="center" width="96"><b>Languages</b></td>
+<td align="center" width="96"><b>Frontend</b></td>
+<td align="center" width="96"><b>Backend</b></td>
+<td align="center" width="96"><b>Database</b></td>
+<td align="center" width="96"><b>DevOps & Tools</b></td>
+</tr>
+<tr>
+<td align="center">
+  <img src="https://skillicons.dev/icons?i=c,cpp&theme=dark"/><br/>
+  <img src="https://skillicons.dev/icons?i=js,ts&theme=dark"/>
+</td>
+<td align="center">
+  <img src="https://skillicons.dev/icons?i=react,nextjs&theme=dark"/><br/>
+  <img src="https://skillicons.dev/icons?i=html,css&theme=dark"/><br/>
+  <img src="https://skillicons.dev/icons?i=tailwind&theme=dark"/>
+</td>
+<td align="center">
+  <img src="https://skillicons.dev/icons?i=nodejs,express&theme=dark"/>
+</td>
+<td align="center">
+  <img src="https://skillicons.dev/icons?i=mongodb,mysql&theme=dark"/>
+</td>
+<td align="center">
+  <img src="https://skillicons.dev/icons?i=git,github&theme=dark"/><br/>
+  <img src="https://skillicons.dev/icons?i=vscode,postman&theme=dark"/><br/>
+  <img src="https://skillicons.dev/icons?i=vercel,linux&theme=dark"/><br/>
+  <img src="https://skillicons.dev/icons?i=figma&theme=dark"/>
+</td>
+</tr>
+</table>
 
 </div>
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:020817,50:0f172a,100:020817&height=2"/>
 
 ## 📊 &nbsp;GitHub Stats
 
@@ -93,8 +124,8 @@ const developer = {
 
 <div align="center">
 
-<img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=Kavathiya-Harsh&show_icons=true&count_private=true&hide_border=true&title_color=38bdf8&icon_color=38bdf8&text_color=e0f2fe&bg_color=0f172a&include_all_commits=true&rank_icon=github" alt="GitHub Stats"/>
-<img width="49%" height="195px" src="https://github-readme-streak-stats.herokuapp.com/?user=Kavathiya-Harsh&hide_border=true&background=0f172a&ring=38bdf8&fire=60a5fa&currStreakLabel=38bdf8&sideLabels=e0f2fe&dates=94a3b8&stroke=38bdf8&currStreakNum=ffffff&sideNums=ffffff" alt="GitHub Streak"/>
+<img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=Kavathiya-Harsh&show_icons=true&count_private=true&hide_border=true&title_color=38bdf8&icon_color=818cf8&text_color=e2e8f0&bg_color=0b1120&include_all_commits=true&rank_icon=github" alt="GitHub Stats"/>
+<img width="49%" height="195px" src="https://github-readme-streak-stats.herokuapp.com/?user=Kavathiya-Harsh&hide_border=true&background=0b1120&ring=38bdf8&fire=818cf8&currStreakLabel=38bdf8&sideLabels=e2e8f0&dates=94a3b8&stroke=1e293b&currStreakNum=ffffff&sideNums=ffffff" alt="GitHub Streak"/>
 
 </div>
 
@@ -116,7 +147,7 @@ const developer = {
 
 <br/>
 
-
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:020817,50:0f172a,100:020817&height=2"/>
 
 ## 📈 &nbsp;Contribution Graph
 
@@ -124,15 +155,15 @@ const developer = {
 
 <div align="center">
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Kavathiya-Harsh&custom_title=Harsh's%20Contribution%20Timeline&bg_color=0f172a&color=38bdf8&line=60a5fa&point=38bdf8&area=true&area_color=1e3a5f&hide_border=true&radius=8)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Kavathiya-Harsh&custom_title=Harsh's%20Contribution%20Timeline&bg_color=0b1120&color=38bdf8&line=818cf8&point=38bdf8&area=true&area_color=1e3a5f&hide_border=true&radius=12)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 </div>
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:020817,50:0f172a,100:020817&height=2"/>
 
-## 🐍 &nbsp;Contribution Activity
+## 🐍 &nbsp;Contribution Snake
 
 <br/>
 
@@ -148,7 +179,7 @@ const developer = {
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:020817,50:0f172a,100:020817&height=2"/>
 
 ## 💼 &nbsp;Featured Projects
 
@@ -159,38 +190,46 @@ const developer = {
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h3>🌐 Portfolio Website</h3>
-      <p>A modern, responsive personal portfolio showcasing my projects, skills, and professional journey. Built with performance and aesthetics in mind.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
-        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=38bdf8"/>
-        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
-        <img src="https://img.shields.io/badge/Tailwind-0f172a?style=flat-square&logo=tailwindcss&logoColor=38bdf8"/>
+      <h3 align="center">🌐 Portfolio Website</h3>
+      <br/>
+      <p align="center">A modern, responsive personal portfolio showcasing my projects, skills, and professional journey. Built with performance and aesthetics in mind.</p>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Next.js-0b1120?style=flat-square&logo=nextdotjs&logoColor=38bdf8"/>
+        <img src="https://img.shields.io/badge/React-0b1120?style=flat-square&logo=react&logoColor=38bdf8"/>
+        <img src="https://img.shields.io/badge/JavaScript-0b1120?style=flat-square&logo=javascript&logoColor=f7df1e"/>
+        <img src="https://img.shields.io/badge/Tailwind-0b1120?style=flat-square&logo=tailwindcss&logoColor=38bdf8"/>
       </p>
-      <a href="https://github.com/Kavathiya-Harsh/Portfolio">
-        <img src="https://img.shields.io/badge/View_Code-0f172a?style=for-the-badge&logo=github&logoColor=38bdf8"/>
-      </a>&nbsp;
-      <a href="https://harshkavathiya.vercel.app">
-        <img src="https://img.shields.io/badge/Live_Demo-38bdf8?style=for-the-badge&logo=vercel&logoColor=020817"/>
-      </a>
+      <p align="center">
+        <a href="https://github.com/Kavathiya-Harsh/Portfolio">
+          <img src="https://img.shields.io/badge/View_Code-0b1120?style=for-the-badge&logo=github&logoColor=38bdf8"/>
+        </a>&nbsp;
+        <a href="https://harshkavathiya.vercel.app">
+          <img src="https://img.shields.io/badge/Live_Demo-818cf8?style=for-the-badge&logo=vercel&logoColor=020817"/>
+        </a>
+      </p>
     </td>
     <td width="50%" valign="top">
-      <h3>🛠️ More Projects Coming Soon</h3>
-      <p>Currently working on exciting new projects with MERN Stack, TypeScript, and Next.js. Stay tuned for updates!</p>
-      <p>
-        <img src="https://img.shields.io/badge/MongoDB-13aa52?style=flat-square&logo=mongodb&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Express-0f172a?style=flat-square&logo=express&logoColor=38bdf8"/>
-        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=38bdf8"/>
-        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"/>
+      <h3 align="center">🛠️ More Projects Coming Soon</h3>
+      <br/>
+      <p align="center">Currently working on exciting new projects with MERN Stack, TypeScript, and Next.js. Stay tuned for updates!</p>
+      <p align="center">
+        <img src="https://img.shields.io/badge/MongoDB-0b1120?style=flat-square&logo=mongodb&logoColor=13aa52"/>
+        <img src="https://img.shields.io/badge/Express-0b1120?style=flat-square&logo=express&logoColor=38bdf8"/>
+        <img src="https://img.shields.io/badge/React-0b1120?style=flat-square&logo=react&logoColor=38bdf8"/>
+        <img src="https://img.shields.io/badge/Node.js-0b1120?style=flat-square&logo=nodedotjs&logoColor=339933"/>
       </p>
-      <img src="https://img.shields.io/badge/In_Progress-1e3a5f?style=for-the-badge&logo=githubactions&logoColor=38bdf8"/>
+      <p align="center">
+        <img src="https://img.shields.io/badge/🚧_In_Progress-0b1120?style=for-the-badge&logoColor=818cf8"/>
+      </p>
     </td>
   </tr>
 </table>
 
+</div>
+
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:020817,50:0f172a,100:020817&height=2"/>
 
 ## 🌐 &nbsp;Let's Connect
 
@@ -199,23 +238,23 @@ const developer = {
 <div align="center">
 
 <a href="https://www.linkedin.com/in/harsh-kavathiya" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" height="42"/>
+  <img src="https://img.shields.io/badge/LinkedIn-0b1120?style=for-the-badge&logo=linkedin&logoColor=0A66C2" height="42"/>
 </a>&nbsp;&nbsp;
 <a href="https://twitter.com/harshk62610" target="_blank">
-  <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" height="42"/>
+  <img src="https://img.shields.io/badge/Twitter-0b1120?style=for-the-badge&logo=x&logoColor=38bdf8" height="42"/>
 </a>&nbsp;&nbsp;
 <a href="mailto:harsh.kavathiya.cg@gmail.com" target="_blank">
-  <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" height="42"/>
+  <img src="https://img.shields.io/badge/Gmail-0b1120?style=for-the-badge&logo=gmail&logoColor=EA4335" height="42"/>
 </a>&nbsp;&nbsp;
 <a href="https://harshkavathiya.vercel.app" target="_blank">
-  <img src="https://img.shields.io/badge/Portfolio-38bdf8?style=for-the-badge&logo=vercel&logoColor=020817" height="42"/>
+  <img src="https://img.shields.io/badge/Portfolio-0b1120?style=for-the-badge&logo=vercel&logoColor=38bdf8" height="42"/>
 </a>
 
 </div>
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:020817,50:0f172a,100:020817&height=2"/>
 
 <div align="center">
 
@@ -225,10 +264,10 @@ const developer = {
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=16&duration=3000&pause=1000&color=93C5FD&center=true&vCenter=true&multiline=false&width=680&height=45&lines=Thanks+for+visiting+my+profile!+%F0%9F%99%8F;Let%27s+build+something+incredible+together!+%F0%9F%9A%80;Drop+a+star+if+my+work+helped+you!+%E2%AD%90;I+always+respond+%E2%80%94+let%27s+connect!+%F0%9F%92%8C" alt="Footer Typing"/>
+<img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=600&size=16&duration=3000&pause=1000&color=818CF8&center=true&vCenter=true&multiline=false&width=700&height=45&lines=Thanks+for+visiting+my+profile!+%F0%9F%99%8F;Let%27s+build+something+incredible+together!+%F0%9F%9A%80;Drop+a+star+if+my+work+helped+you!+%E2%AD%90;I+always+respond+%E2%80%94+let%27s+connect!+%F0%9F%92%8C" alt="Footer Typing"/>
 
 <br/><br/>
 
 </div>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:020817,30:0f172a,65:1e3a5f,100:020817&height=160&section=footer&animation=twinkling"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:38bdf8,25:1e3a5f,50:0f172a,75:0b1120,100:020817&height=160&section=footer&animation=twinkling"/>
