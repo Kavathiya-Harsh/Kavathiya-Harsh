@@ -78,36 +78,52 @@ jobs:
               .key-text {{ font-family: \"Space Grotesk\", system-ui, -apple-system, sans-serif; font-size: 9px; fill: {key_text_color}; font-weight: bold; text-anchor: middle; }}
 
               /* Dynamic HUD Value Animations */
-              .score-t::after {{ content: \"0\"; animation: scoreAnim 26900ms step-end infinite; }}
-              .float-t::after {{ content: \"0\"; animation: floatAnim 26900ms step-end infinite; }}
-              .streak-t::after {{ content: \"0\"; animation: streakAnim 26900ms step-end infinite; }}
-              .speed-t::after {{ content: \"1.0x\"; animation: speedAnim 26900ms step-end infinite; }}
+              .s-0, .s-1, .s-2, .s-3, .s-4, .s-5 { display: none; }
+              .f-0, .f-1, .f-2, .f-3 { display: none; }
+              .st-0, .st-1, .st-2, .st-3 { display: none; }
+              .sp-0, .sp-1, .sp-2 { display: none; }
 
-              @keyframes scoreAnim {{
-                0% {{ content: \"0\"; }}
-                10% {{ content: \"24\"; }}
-                25% {{ content: \"58\"; }}
-                45% {{ content: \"86\"; }}
-                65% {{ content: \"112\"; }}
-                85% {{ content: \"147\"; }}
-              }}
-              @keyframes floatAnim {{
-                0% {{ content: \"0\"; }}
-                30% {{ content: \"12\"; }}
-                60% {{ content: \"28\"; }}
-                80% {{ content: \"42\"; }}
-              }}
-              @keyframes streakAnim {{
-                0% {{ content: \"0\"; }}
-                20% {{ content: \"2\"; }}
-                40% {{ content: \"5\"; }}
-                75% {{ content: \"0\"; }}
-              }}
-              @keyframes speedAnim {{
-                0% {{ content: \"1.0x\"; }}
-                35% {{ content: \"1.1x\"; }}
-                70% {{ content: \"1.3x\"; }}
-              }}
+              .s-0 { display: inline; animation: s0 26900ms step-end infinite; }
+              .s-1 { animation: s1 26900ms step-end infinite; }
+              .s-2 { animation: s2 26900ms step-end infinite; }
+              .s-3 { animation: s3 26900ms step-end infinite; }
+              .s-4 { animation: s4 26900ms step-end infinite; }
+              .s-5 { animation: s5 26900ms step-end infinite; }
+
+              .f-0 { display: inline; animation: f0 26900ms step-end infinite; }
+              .f-1 { animation: f1 26900ms step-end infinite; }
+              .f-2 { animation: f2 26900ms step-end infinite; }
+              .f-3 { animation: f3 26900ms step-end infinite; }
+
+              .st-0 { display: inline; animation: st0 26900ms step-end infinite; }
+              .st-1 { animation: st1 26900ms step-end infinite; }
+              .st-2 { animation: st2 26900ms step-end infinite; }
+              .st-3 { animation: st3 26900ms step-end infinite; }
+
+              .sp-0 { display: inline; animation: sp0 26900ms step-end infinite; }
+              .sp-1 { animation: sp1 26900ms step-end infinite; }
+              .sp-2 { animation: sp2 26900ms step-end infinite; }
+
+              @keyframes s0 { 0%, 10% { display: inline; } 10.01%, 100% { display: none; } }
+              @keyframes s1 { 0%, 10% { display: none; } 10.01%, 25% { display: inline; } 25.01%, 100% { display: none; } }
+              @keyframes s2 { 0%, 25% { display: none; } 25.01%, 45% { display: inline; } 45.01%, 100% { display: none; } }
+              @keyframes s3 { 0%, 45% { display: none; } 45.01%, 65% { display: inline; } 65.01%, 100% { display: none; } }
+              @keyframes s4 { 0%, 65% { display: none; } 65.01%, 85% { display: inline; } 85.01%, 100% { display: none; } }
+              @keyframes s5 { 0%, 85% { display: none; } 85.01%, 100% { display: inline; } }
+
+              @keyframes f0 { 0%, 30% { display: inline; } 30.01%, 100% { display: none; } }
+              @keyframes f1 { 0%, 30% { display: none; } 30.01%, 60% { display: inline; } 60.01%, 100% { display: none; } }
+              @keyframes f2 { 0%, 60% { display: none; } 60.01%, 80% { display: inline; } 80.01%, 100% { display: none; } }
+              @keyframes f3 { 0%, 80% { display: none; } 80.01%, 100% { display: inline; } }
+
+              @keyframes st0 { 0%, 20% { display: inline; } 20.01%, 100% { display: none; } }
+              @keyframes st1 { 0%, 20% { display: none; } 20.01%, 40% { display: inline; } 40.01%, 100% { display: none; } }
+              @keyframes st2 { 0%, 40% { display: none; } 40.01%, 75% { display: inline; } 75.01%, 100% { display: none; } }
+              @keyframes st3 { 0%, 75% { display: none; } 75.01%, 100% { display: inline; } }
+
+              @keyframes sp0 { 0%, 35% { display: inline; } 35.01%, 100% { display: none; } }
+              @keyframes sp1 { 0%, 35% { display: none; } 35.01%, 70% { display: inline; } 70.01%, 100% { display: none; } }
+              @keyframes sp2 { 0%, 70% { display: none; } 70.01%, 100% { display: inline; } }
               '''
               svg = svg.replace('<style>', f'<style>{new_css}')
               
@@ -149,28 +165,49 @@ jobs:
                 <g transform=\"translate(0, 0)\">
                   <rect class=\"hud-box\" x=\"0\" y=\"0\" width=\"140\" height=\"34\"/>
                   <text class=\"hud-label\" x=\"15\" y=\"21\">🎯 Score</text>
-                  <text class=\"hud-val\" x=\"90\" y=\"21\"><tspan class=\"score-t\"></tspan></text>
+                  <text class=\"hud-val\" x=\"90\" y=\"21\">
+                    <tspan class=\"s-0\">0</tspan>
+                    <tspan class=\"s-1\">24</tspan>
+                    <tspan class=\"s-2\">58</tspan>
+                    <tspan class=\"s-3\">86</tspan>
+                    <tspan class=\"s-4\">112</tspan>
+                    <tspan class=\"s-5\">147</tspan>
+                  </text>
                 </g>
 
                 <!-- HUD 2: Floating -->
                 <g transform=\"translate(160, 0)\">
                   <rect class=\"hud-box\" x=\"0\" y=\"0\" width=\"140\" height=\"34\"/>
                   <text class=\"hud-label\" x=\"15\" y=\"21\">🫧 Floating</text>
-                  <text class=\"hud-val\" x=\"95\" y=\"21\"><tspan class=\"float-t\"></tspan></text>
+                  <text class=\"hud-val\" x=\"95\" y=\"21\">
+                    <tspan class=\"f-0\">0</tspan>
+                    <tspan class=\"f-1\">12</tspan>
+                    <tspan class=\"f-2\">28</tspan>
+                    <tspan class=\"f-3\">42</tspan>
+                  </text>
                 </g>
 
                 <!-- HUD 3: Streak -->
                 <g transform=\"translate(320, 0)\">
                   <rect class=\"hud-box\" x=\"0\" y=\"0\" width=\"140\" height=\"34\"/>
                   <text class=\"hud-label\" x=\"15\" y=\"21\">🔥 Streak</text>
-                  <text class=\"hud-val\" x=\"95\" y=\"21\"><tspan class=\"streak-t\"></tspan></text>
+                  <text class=\"hud-val\" x=\"95\" y=\"21\">
+                    <tspan class=\"st-0\">0</tspan>
+                    <tspan class=\"st-1\">2</tspan>
+                    <tspan class=\"st-2\">5</tspan>
+                    <tspan class=\"st-3\">0</tspan>
+                  </text>
                 </g>
 
                 <!-- HUD 4: Speed -->
                 <g transform=\"translate(480, 0)\">
                   <rect class=\"hud-box\" x=\"0\" y=\"0\" width=\"140\" height=\"34\"/>
                   <text class=\"hud-label\" x=\"15\" y=\"21\">⚡ Speed</text>
-                  <text class=\"hud-val\" x=\"90\" y=\"21\"><tspan class=\"speed-t\"></tspan></text>
+                  <text class=\"hud-val\" x=\"90\" y=\"21\">
+                    <tspan class=\"sp-0\">1.0x</tspan>
+                    <tspan class=\"sp-1\">1.1x</tspan>
+                    <tspan class=\"sp-2\">1.3x</tspan>
+                  </text>
                 </g>
               </g>
 
