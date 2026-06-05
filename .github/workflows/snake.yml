@@ -29,14 +29,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Apply Glowing Style Effects
+        shell: python
         run: |
-          python -c "
           import re, os
           for filename in ['github-contribution-grid-snake.svg', 'github-contribution-grid-snake-dark.svg']:
               path = os.path.join('dist', filename)
               if not os.path.exists(path):
                   continue
-              print(f'Processing {path}...')
+              print(f"Processing {path}...")
               with open(path, 'r', encoding='utf-8') as f:
                   svg = f.read()
               
@@ -57,8 +57,7 @@ jobs:
               
               with open(path, 'w', encoding='utf-8') as f:
                   f.write(svg)
-              print(f'Successfully processed {filename}')
-          "
+              print(f"Successfully processed {filename}")
 
       - name: Push Snake SVG to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
