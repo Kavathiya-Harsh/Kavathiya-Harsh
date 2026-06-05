@@ -145,21 +145,33 @@ jobs:
 
               <!-- HUD Panels -->
               <g transform=\"translate(100, -75)\">
-                <rect class=\"hud-box\" x=\"0\" y=\"0\" width=\"140\" height=\"34\"/>
-                <text class=\"hud-label\" x=\"15\" y=\"21\">🎯 Score</text>
-                <text class=\"hud-val\" x=\"90\" y=\"21\"><tspan class=\"score-t\"></tspan></text>
+                <!-- HUD 1: Score -->
+                <g transform=\"translate(0, 0)\">
+                  <rect class=\"hud-box\" x=\"0\" y=\"0\" width=\"140\" height=\"34\"/>
+                  <text class=\"hud-label\" x=\"15\" y=\"21\">🎯 Score</text>
+                  <text class=\"hud-val\" x=\"90\" y=\"21\"><tspan class=\"score-t\"></tspan></text>
+                </g>
 
-                <rect class=\"hud-box\" x=\"160\" y=\"0\" width=\"140\" height=\"34\"/>
-                <text class=\"hud-label\" x=\"15\" y=\"21\">🫧 Floating</text>
-                <text class=\"hud-val\" x=\"95\" y=\"21\"><tspan class=\"float-t\"></tspan></text>
+                <!-- HUD 2: Floating -->
+                <g transform=\"translate(160, 0)\">
+                  <rect class=\"hud-box\" x=\"0\" y=\"0\" width=\"140\" height=\"34\"/>
+                  <text class=\"hud-label\" x=\"15\" y=\"21\">🫧 Floating</text>
+                  <text class=\"hud-val\" x=\"95\" y=\"21\"><tspan class=\"float-t\"></tspan></text>
+                </g>
 
-                <rect class=\"hud-box\" x=\"320\" y=\"0\" width=\"140\" height=\"34\"/>
-                <text class=\"hud-label\" x=\"15\" y=\"21\">🔥 Streak</text>
-                <text class=\"hud-val\" x=\"95\" y=\"21\"><tspan class=\"streak-t\"></tspan></text>
+                <!-- HUD 3: Streak -->
+                <g transform=\"translate(320, 0)\">
+                  <rect class=\"hud-box\" x=\"0\" y=\"0\" width=\"140\" height=\"34\"/>
+                  <text class=\"hud-label\" x=\"15\" y=\"21\">🔥 Streak</text>
+                  <text class=\"hud-val\" x=\"95\" y=\"21\"><tspan class=\"streak-t\"></tspan></text>
+                </g>
 
-                <rect class=\"hud-box\" x=\"480\" y=\"0\" width=\"140\" height=\"34\"/>
-                <text class=\"hud-label\" x=\"15\" y=\"21\">⚡ Speed</text>
-                <text class=\"hud-val\" x=\"90\" y=\"21\"><tspan class=\"speed-t\"></tspan></text>
+                <!-- HUD 4: Speed -->
+                <g transform=\"translate(480, 0)\">
+                  <rect class=\"hud-box\" x=\"0\" y=\"0\" width=\"140\" height=\"34\"/>
+                  <text class=\"hud-label\" x=\"15\" y=\"21\">⚡ Speed</text>
+                  <text class=\"hud-val\" x=\"90\" y=\"21\"><tspan class=\"speed-t\"></tspan></text>
+                </g>
               </g>
 
               <!-- Grid Border -->
