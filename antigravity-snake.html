@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Antigravity Snake — Harsh Kavathiya</title>
+<meta name="description" content="An interactive GitHub contribution graph snake with antigravity floating cells, particle effects, and glowing visuals."/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:100%;height:100%;overflow:hidden;background:#020817;font-family:'Inter',sans-serif;color:#e0f2fe}
+  
+  #bg-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none}
+  
+  .wrapper{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;gap:20px;padding:20px 16px;overflow:auto}
+  
+  h1{
+    font-family:'JetBrains Mono',monospace;font-size:clamp(18px,3vw,32px);font-weight:900;
+    background:linear-gradient(135deg,#38bdf8,#22d3ee,#34d399,#38bdf8);
+    background-size:300% 300%;
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    animation:gradShift 4s ease infinite;
+    text-shadow:0 0 40px rgba(56,189,248,0.3);
+    letter-spacing:1px;
+  }
+  @keyframes gradShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+  
+  .subtitle{font-size:clamp(11px,1.5vw,14px);color:#64748b;font-family:'JetBrains Mono',monospace;margin-top:-12px}
+  
+  .canvas-container{
+    position:relative;
+    border-radius:16px;
+    padding:3px;
+    background:linear-gradient(135deg,#38bdf8,#22d3ee,#34d399);
+
+    max-width:95vw;overflow:hidden;
+  }
+  .canvas-inner{
+    background:#0a0f1e;
+    border-radius:14px;
+    overflow:hidden;
+  }
+  #game-canvas{display:block;border-radius:14px}
+  
+  /* HUD */
+  .hud{
+    display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:center;
+    font-family:'JetBrains Mono',monospace;font-size:clamp(11px,1.4vw,14px);
+    max-width:95vw;
+  }
+  .hud-item{
+    display:flex;align-items:center;gap:8px;
+    padding:8px 16px;
+    background:rgba(15,23,42,0.8);
+    border:1px solid rgba(56,189,248,0.15);
+    border-radius:10px;
+    backdrop-filter:blur(8px);
+    transition:all 0.3s ease;
+  }
+  .hud-item:hover{border-color:rgba(56,189,248,0.4);box-shadow:0 0 20px rgba(56,189,248,0.1)}
+  .hud-icon{font-size:1.2em}
+  .hud-label{color:#64748b}
+  .hud-value{color:#38bdf8;font-weight:700}
+  .hud-value.streak{color:#22d3ee}
+  .hud-value.score{color:#34d399}
+  
+  .controls{
+    font-family:'JetBrains Mono',monospace;font-size:11px;color:#334155;
+    display:flex;gap:16px;flex-wrap:wrap;justify-content:center;
+  }
+  .controls kbd{
+    padding:2px 8px;border-radius:4px;
+    background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.15);
+    color:#64748b;font-family:inherit;
+  }
+  
+  .credit{
+    position:fixed;bottom:12px;right:16px;
+    font-family:'JetBrains Mono',monospace;font-size:10px;color:#1e293b;
+    z-index:10;
+  }
+  .credit a{color:#334155;text-decoration:none}
+  .credit a:hover{color:#38bdf8}
+</style>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<div class="wrapper">
+  <h1>⟨ ANTIGRAVITY SNAKE ⟩</h1>
+  <div class="subtitle">github contribution grid × reverse gravity</div>
+  
+  <div class="hud" id="hud">
+    <div class="hud-item"><span class="hud-icon">🎯</span><span class="hud-label">Score</span><span class="hud-value score" id="hud-score">0</span></div>
+    <div class="hud-item"><span class="hud-icon">🫧</span><span class="hud-label">Floating</span><span class="hud-value" id="hud-floating">0</span></div>
+    <div class="hud-item"><span class="hud-icon">🔥</span><span class="hud-label">Streak</span><span class="hud-value streak" id="hud-streak">0</span></div>
+    <div class="hud-item"><span class="hud-icon">⚡</span><span class="hud-label">Speed</span><span class="hud-value" id="hud-speed">1.0x</span></div>
+  </div>
+  
+  <div class="canvas-container">
+    <div class="canvas-inner">
+      <canvas id="game-canvas"></canvas>
+    </div>
+  </div>
+  
+  <div class="controls">
+    <span><kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd> or <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> Move</span>
+    <span><kbd>Space</kbd> Pause</span>
+    <span><kbd>R</kbd> Reset</span>
+  </div>
+</div>
+
+<div class="credit"><a href="https://github.com/Kavathiya-Harsh" target="_blank">@Kavathiya-Harsh</a></div>
+
+<script>
+// ─── Background starfield ────────────────────────────────────────────
+(() => {
+  const bg = document.getElementById('bg-canvas');
+  const ctx = bg.getContext('2d');
+  let stars = [];
+  
+  function resize() {
+    bg.width = window.innerWidth;
+    bg.height = window.innerHeight;
+    stars = Array.from({length: 120}, () => ({
+      x: Math.random() * bg.width,
+      y: Math.random() * bg.height,
+      r: Math.random() * 1.2 + 0.3,
+      a: Math.random(),
+      speed: Math.random() * 0.3 + 0.05,
+      phase: Math.random() * Math.PI * 2,
+    }));
+  }
+  
+  function draw(t) {
+    ctx.clearRect(0, 0, bg.width, bg.height);
+    for (const s of stars) {
+      const alpha = 0.3 + 0.4 * Math.sin(t * 0.001 * s.speed + s.phase);
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(56,189,248,${alpha})`;
+      ctx.fill();
+    }
+    requestAnimationFrame(draw);
+  }
+  
+  window.addEventListener('resize', resize);
+  resize();
+  requestAnimationFrame(draw);
+})();
+
+// ─── Main Game ───────────────────────────────────────────────────────
+(() => {
+  const canvas = document.getElementById('game-canvas');
+  const ctx = canvas.getContext('2d');
+  
+  // ─── Grid config ──────────────────────────────────────────────────
+  const COLS = 52;
+  const ROWS = 7;
+  const CELL = 14;
+  const GAP = 3;
+  const PAD = 28;
+  const MONTH_BAR = 22;
+  const DAY_LABEL_W = 32;
+  
+  const W = DAY_LABEL_W + COLS * (CELL + GAP) + PAD;
+  const H = MONTH_BAR + ROWS * (CELL + GAP) + PAD + 10;
+  
+  canvas.width = W;
+  canvas.height = H;
+  canvas.style.width = `min(${W}px, 92vw)`;
+  canvas.style.height = 'auto';
+  
+  // ─── Color palette (cyan + green) ─────────────────────────────────
+  const PALETTE = [
+    '#0a1628',       // 0 – empty (dark)
+    '#0e4429',       // 1 – low green
+    '#0d6b3f',       // 2 – mid green
+    '#1a7f5a',       // 3 – green
+    '#26a269',       // 4 – bright green
+    '#0c525a',       // 5 – low cyan
+    '#0e7490',       // 6 – mid cyan
+    '#22829a',       // 7 – cyan
+    '#22d3ee',       // 8 – bright cyan
+    '#38bdf8',       // 9 – sky blue
+    '#34d399',       // 10 – emerald
+  ];
+  
+  const GLOW_COLORS = [
+    null,
+    'rgba(14,68,41,0.5)',
+    'rgba(13,107,63,0.5)',
+    'rgba(26,127,90,0.6)',
+    'rgba(38,162,105,0.6)',
+    'rgba(12,82,90,0.5)',
+    'rgba(14,116,144,0.5)',
+    'rgba(34,130,154,0.6)',
+    'rgba(34,211,238,0.7)',
+    'rgba(56,189,248,0.7)',
+    'rgba(52,211,153,0.7)',
+  ];
+  
+  // ─── Generate contribution data ───────────────────────────────────
+  const grid = [];
+  for (let r = 0; r < ROWS; r++) {
+    grid[r] = [];
+    for (let c = 0; c < COLS; c++) {
+      const rand = Math.random();
+      let level;
+      if (rand < 0.30) level = 0;
+      else if (rand < 0.45) level = 1;
+      else if (rand < 0.55) level = 2;
+      else if (rand < 0.65) level = 3;
+      else if (rand < 0.72) level = 4;
+      else if (rand < 0.79) level = 5;
+      else if (rand < 0.85) level = 6;
+      else if (rand < 0.90) level = 7;
+      else if (rand < 0.94) level = 8;
+      else if (rand < 0.97) level = 9;
+      else level = 10;
+      grid[r][c] = { level, eaten: false, opacity: 1 };
+    }
+  }
+  
+  // ─── Helpers ──────────────────────────────────────────────────────
+  function cellX(c) { return DAY_LABEL_W + c * (CELL + GAP); }
+  function cellY(r) { return MONTH_BAR + r * (CELL + GAP); }
+  
+  const MONTHS = ['Jun','Jul','Aug','Sep','Oct','Nov','Dec','Jan','Feb','Mar','Apr','May'];
+  const DAYS = ['','Mon','','Wed','','Fri',''];
+  
+  // ─── Snake state ──────────────────────────────────────────────────
+  const startR = 3, startC = 0;
+  let snake = [{r: startR, c: startC}];
+  let dir = {r: 0, c: 1};
+  let nextDir = {r: 0, c: 1};
+  let score = 0;
+  let streak = 0;
+  let maxStreak = 0;
+  let paused = false;
+  let moveTimer = 0;
+  let moveInterval = 180; // ms per move
+  let tongueFlicker = 0;
+  
+  // ─── Floating cells ───────────────────────────────────────────────
+  let floaters = [];
+  let particles = [];
+  let ripples = [];
+  let floatingCount = 0;
+  let totalFloated = 0;
+  
+  class Floater {
+    constructor(x, y, w, color, glowColor, level) {
+      this.x = x + (Math.random() - 0.5) * 3;
+      this.y = y;
+      this.w = w;
+      this.color = color;
+      this.glowColor = glowColor;
+      this.level = level;
+      this.vy = -(Math.random() * 0.5 + 0.3); // initial upward velocity
+      this.vx = (Math.random() - 0.5) * 0.4;
+      this.ay = -(Math.random() * 0.008 + 0.005); // upward acceleration (antigravity!)
+      this.rotation = 0;
+      this.rotSpeed = (Math.random() - 0.5) * 0.04;
+      this.opacity = 1;
+      this.scale = 1;
+      this.life = 1;
+    }
+    update(dt) {
+      this.vy += this.ay * dt;
+      this.y += this.vy * dt;
+      this.x += this.vx * dt;
+      this.rotation += this.rotSpeed * dt;
+      // fade out as it goes up
+      if (this.y < -20) {
+        this.life -= 0.008 * dt;
+        this.opacity = Math.max(0, this.life);
+      }
+      return this.opacity > 0 && this.y > -200;
+    }
+    draw(ctx) {
+      ctx.save();
+      ctx.translate(this.x + this.w / 2, this.y + this.w / 2);
+      ctx.rotate(this.rotation);
+      ctx.globalAlpha = this.opacity;
+      
+      // glow
+      if (this.glowColor) {
+        ctx.shadowColor = this.color;
+        ctx.shadowBlur = 12 + this.level * 2;
+      }
+      
+      ctx.fillStyle = this.color;
+      roundRect(ctx, -this.w / 2, -this.w / 2, this.w, this.w, 3);
+      ctx.fill();
+      
+      ctx.shadowBlur = 0;
+      ctx.restore();
+    }
+  }
+  
+  class Particle {
+    constructor(x, y, color) {
+      this.x = x;
+      this.y = y;
+      this.color = color;
+      const angle = Math.random() * Math.PI * 2;
+      const speed = Math.random() * 2.5 + 0.8;
+      this.vx = Math.cos(angle) * speed;
+      this.vy = Math.sin(angle) * speed - 1.5; // bias upward
+      this.ay = -(Math.random() * 0.01 + 0.005); // antigravity
+      this.r = Math.random() * 2.5 + 1;
+      this.life = 1;
+      this.decay = Math.random() * 0.015 + 0.008;
+    }
+    update(dt) {
+      this.vy += this.ay * dt;
+      this.x += this.vx * dt;
+      this.y += this.vy * dt;
+      this.vx *= 0.995;
+      this.life -= this.decay * dt;
+      return this.life > 0;
+    }
+    draw(ctx) {
+      ctx.save();
+      ctx.globalAlpha = this.life * 0.9;
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.r * this.life, 0, Math.PI * 2);
+      ctx.fillStyle = this.color;
+      ctx.shadowColor = this.color;
+      ctx.shadowBlur = 8;
+      ctx.fill();
+      ctx.restore();
+    }
+  }
+  
+  class Ripple {
+    constructor(x, y, color) {
+      this.x = x;
+      this.y = y;
+      this.color = color;
+      this.radius = 3;
+      this.maxRadius = 30 + Math.random() * 15;
+      this.life = 1;
+    }
+    update(dt) {
+      this.radius += 0.5 * dt;
+      this.life = 1 - this.radius / this.maxRadius;
+      return this.life > 0;
+    }
+    draw(ctx) {
+      ctx.save();
+      ctx.globalAlpha = this.life * 0.5;
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+      ctx.strokeStyle = this.color;
+      ctx.lineWidth = 1.5 * this.life;
+      ctx.shadowColor = this.color;
+      ctx.shadowBlur = 6;
+      ctx.stroke();
+      ctx.restore();
+    }
+  }
+  
+  function roundRect(ctx, x, y, w, h, r) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.lineTo(x + w - r, y);
+    ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+    ctx.lineTo(x + w, y + h - r);
+    ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+    ctx.lineTo(x + r, y + h);
+    ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+    ctx.lineTo(x, y + r);
+    ctx.quadraticCurveTo(x, y, x + r, y);
+    ctx.closePath();
+  }
+  
+  // ─── Eat action ───────────────────────────────────────────────────
+  function eatCell(r, c) {
+    const cell = grid[r][c];
+    if (cell.eaten || cell.level === 0) return;
+    
+    const level = cell.level;
+    cell.eaten = true;
+    score += level;
+    streak++;
+    if (streak > maxStreak) maxStreak = streak;
+    
+    const cx = cellX(c);
+    const cy = cellY(r);
+    const centerX = cx + CELL / 2;
+    const centerY = cy + CELL / 2;
+    const color = PALETTE[level];
+    const glowColor = GLOW_COLORS[level];
+    
+    // Spawn floaters — more for higher level cells
+    const count = Math.ceil(level / 2) + 1;
+    for (let i = 0; i < count; i++) {
+      floaters.push(new Floater(
+        cx + (Math.random() - 0.5) * 6,
+        cy + (Math.random() - 0.5) * 6,
+        CELL * (0.8 + Math.random() * 0.4),
+        color, glowColor, level
+      ));
+      floatingCount++;
+      totalFloated++;
+    }
+    
+    // Particle burst — more for higher level
+    const pCount = 8 + level * 3;
+    const particleColors = [color, '#38bdf8', '#22d3ee', '#34d399', '#60a5fa'];
+    for (let i = 0; i < pCount; i++) {
+      particles.push(new Particle(centerX, centerY, particleColors[i % particleColors.length]));
+    }
+    
+    // Ripple ring
+    ripples.push(new Ripple(centerX, centerY, color));
+    ripples.push(new Ripple(centerX, centerY, '#38bdf8'));
+  }
+  
+  // ─── Input ────────────────────────────────────────────────────────
+  document.addEventListener('keydown', e => {
+    const key = e.key.toLowerCase();
+    if (key === 'arrowup' || key === 'w') { if (dir.r !== 1) nextDir = {r:-1,c:0}; }
+    else if (key === 'arrowdown' || key === 's') { if (dir.r !== -1) nextDir = {r:1,c:0}; }
+    else if (key === 'arrowleft' || key === 'a') { if (dir.c !== 1) nextDir = {r:0,c:-1}; }
+    else if (key === 'arrowright' || key === 'd') { if (dir.c !== -1) nextDir = {r:0,c:1}; }
+    else if (key === ' ') { e.preventDefault(); paused = !paused; }
+    else if (key === 'r') resetGame();
+  });
+  
+  // ─── Touch support ────────────────────────────────────────────────
+  let touchStart = null;
+  canvas.addEventListener('touchstart', e => {
+    touchStart = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+  });
+  canvas.addEventListener('touchend', e => {
+    if (!touchStart) return;
+    const dx = e.changedTouches[0].clientX - touchStart.x;
+    const dy = e.changedTouches[0].clientY - touchStart.y;
+    if (Math.abs(dx) > Math.abs(dy)) {
+      if (dx > 20 && dir.c !== -1) nextDir = {r:0,c:1};
+      else if (dx < -20 && dir.c !== 1) nextDir = {r:0,c:-1};
+    } else {
+      if (dy > 20 && dir.r !== -1) nextDir = {r:1,c:0};
+      else if (dy < -20 && dir.r !== 1) nextDir = {r:-1,c:0};
+    }
+    touchStart = null;
+  });
+  
+  // ─── Reset ────────────────────────────────────────────────────────
+  function resetGame() {
+    snake = [{r: startR, c: startC}];
+    dir = {r: 0, c: 1};
+    nextDir = {r: 0, c: 1};
+    score = 0; streak = 0; floatingCount = 0; totalFloated = 0;
+    floaters = []; particles = []; ripples = [];
+    moveInterval = 180;
+    for (let r = 0; r < ROWS; r++)
+      for (let c = 0; c < COLS; c++) {
+        grid[r][c].eaten = false;
+        grid[r][c].opacity = 1;
+      }
+  }
+  
+  // ─── Game loop ────────────────────────────────────────────────────
+  let lastTime = 0;
+  
+  function gameLoop(timestamp) {
+    const dt = Math.min(timestamp - lastTime, 50);
+    lastTime = timestamp;
+    
+    if (!paused) {
+      moveTimer += dt;
+      if (moveTimer >= moveInterval) {
+        moveTimer = 0;
+        moveSnake();
+      }
+    }
+    
+    // Update effects
+    floaters = floaters.filter(f => f.update(dt / 16));
+    particles = particles.filter(p => p.update(dt / 16));
+    ripples = ripples.filter(r => r.update(dt / 16));
+    floatingCount = floaters.length;
+    
+    tongueFlicker += dt;
+    
+    draw(timestamp);
+    updateHUD();
+    
+    requestAnimationFrame(gameLoop);
+  }
+  
+  function moveSnake() {
+    dir = {...nextDir};
+    const head = snake[0];
+    let nr = head.r + dir.r;
+    let nc = head.c + dir.c;
+    
+    // Wrap around
+    if (nr < 0) nr = ROWS - 1;
+    if (nr >= ROWS) nr = 0;
+    if (nc < 0) nc = COLS - 1;
+    if (nc >= COLS) nc = 0;
+    
+    const newHead = {r: nr, c: nc};
+    
+    // Check self collision — if so, lose streak
+    for (const seg of snake) {
+      if (seg.r === nr && seg.c === nc) {
+        streak = 0;
+        break;
+      }
+    }
+    
+    snake.unshift(newHead);
+    
+    // Check if cell has contribution
+    const cell = grid[nr][nc];
+    if (cell.level > 0 && !cell.eaten) {
+      eatCell(nr, nc);
+      // Grow snake — keep tail for a bit based on level
+      // Don't pop — snake grows
+      if (snake.length > 5 + Math.floor(score / 15)) {
+        snake.pop();
+      }
+      // Slightly speed up
+      moveInterval = Math.max(80, moveInterval - 1);
+    } else {
+      snake.pop();
+      if (cell.level === 0 || cell.eaten) {
+        // Empty cell — break streak
+        streak = 0;
+      }
+    }
+  }
+  
+  // ─── Draw ─────────────────────────────────────────────────────────
+  function draw(t) {
+    ctx.clearRect(0, 0, W, H);
+    
+    // Background
+    ctx.fillStyle = '#0a0f1e';
+    ctx.fillRect(0, 0, W, H);
+    
+    // Month labels
+    ctx.font = '10px "JetBrains Mono", monospace';
+    ctx.fillStyle = '#475569';
+    const monthSpacing = Math.floor(COLS / MONTHS.length);
+    for (let i = 0; i < MONTHS.length; i++) {
+      const x = cellX(i * monthSpacing + 1);
+      ctx.fillText(MONTHS[i], x, 14);
+    }
+    
+    // Day labels
+    ctx.fillStyle = '#475569';
+    for (let r = 0; r < ROWS; r++) {
+      if (DAYS[r]) {
+        ctx.fillText(DAYS[r], 4, cellY(r) + CELL - 2);
+      }
+    }
+    
+    // Draw grid cells
+    for (let r = 0; r < ROWS; r++) {
+      for (let c = 0; c < COLS; c++) {
+        const cell = grid[r][c];
+        const x = cellX(c);
+        const y = cellY(r);
+        
+        if (cell.eaten) {
+          // Draw empty ghost
+          ctx.save();
+          ctx.globalAlpha = 0.15;
+          ctx.fillStyle = '#0f1729';
+          roundRect(ctx, x, y, CELL, CELL, 2);
+          ctx.fill();
+          ctx.restore();
+        } else {
+          // Draw filled cell
+          ctx.save();
+          ctx.fillStyle = PALETTE[cell.level];
+          roundRect(ctx, x, y, CELL, CELL, 2);
+          ctx.fill();
+          ctx.shadowBlur = 0;
+          
+          // Subtle inner highlight on higher cells
+          if (cell.level >= 5) {
+            ctx.globalAlpha = 0.15;
+            ctx.fillStyle = '#ffffff';
+            roundRect(ctx, x + 1, y + 1, CELL - 2, CELL / 2 - 1, 2);
+            ctx.fill();
+          }
+          ctx.restore();
+        }
+      }
+    }
+    
+    // Draw ripples (under snake)
+    for (const rip of ripples) rip.draw(ctx);
+    
+    // Draw snake
+    drawSnake(t);
+    
+    // Draw floaters (above everything)
+    for (const f of floaters) f.draw(ctx);
+    
+    // Draw particles
+    for (const p of particles) p.draw(ctx);
+    
+    // Pause overlay
+    if (paused) {
+      ctx.save();
+      ctx.fillStyle = 'rgba(2,8,23,0.6)';
+      ctx.fillRect(0, 0, W, H);
+      ctx.font = '700 24px "JetBrains Mono", monospace';
+      ctx.fillStyle = '#38bdf8';
+      ctx.textAlign = 'center';
+      ctx.shadowColor = '#38bdf8';
+      ctx.shadowBlur = 20;
+      ctx.fillText('⏸ PAUSED', W / 2, H / 2);
+      ctx.shadowBlur = 0;
+      ctx.font = '12px "JetBrains Mono", monospace';
+      ctx.fillStyle = '#64748b';
+      ctx.fillText('Press SPACE to resume', W / 2, H / 2 + 24);
+      ctx.restore();
+    }
+  }
+  
+  function drawSnake(t) {
+    const segCount = snake.length;
+    
+    for (let i = segCount - 1; i >= 0; i--) {
+      const seg = snake[i];
+      const x = cellX(seg.c);
+      const y = cellY(seg.r);
+      const isHead = i === 0;
+      const progress = i / segCount;
+      
+      ctx.save();
+      
+      if (isHead) {
+        // Head — brighter
+        const headGrad = ctx.createRadialGradient(x + CELL/2, y + CELL/2, 0, x + CELL/2, y + CELL/2, CELL);
+        headGrad.addColorStop(0, '#5eead4');
+        headGrad.addColorStop(1, '#0d9488');
+        ctx.fillStyle = headGrad;
+        ctx.shadowColor = '#22d3ee';
+        ctx.shadowBlur = 14;
+        roundRect(ctx, x - 1, y - 1, CELL + 2, CELL + 2, 3);
+        ctx.fill();
+        ctx.shadowBlur = 0;
+        
+        // Eyes — glowing cyan
+        const eyeSize = 2.5;
+        let ex1, ey1, ex2, ey2;
+        
+        if (dir.c === 1) { // right
+          ex1 = x + CELL - 4; ey1 = y + 3.5;
+          ex2 = x + CELL - 4; ey2 = y + CELL - 3.5;
+        } else if (dir.c === -1) { // left
+          ex1 = x + 4; ey1 = y + 3.5;
+          ex2 = x + 4; ey2 = y + CELL - 3.5;
+        } else if (dir.r === -1) { // up
+          ex1 = x + 3.5; ey1 = y + 4;
+          ex2 = x + CELL - 3.5; ey2 = y + 4;
+        } else { // down
+          ex1 = x + 3.5; ey1 = y + CELL - 4;
+          ex2 = x + CELL - 3.5; ey2 = y + CELL - 4;
+        }
+        
+        // Eye glow
+        ctx.shadowColor = '#22d3ee';
+        ctx.shadowBlur = 10;
+        ctx.fillStyle = '#22d3ee';
+        ctx.beginPath(); ctx.arc(ex1, ey1, eyeSize, 0, Math.PI * 2); ctx.fill();
+        ctx.beginPath(); ctx.arc(ex2, ey2, eyeSize, 0, Math.PI * 2); ctx.fill();
+        
+        // Bright center pupil
+        ctx.shadowBlur = 0;
+        ctx.fillStyle = '#ffffff';
+        ctx.beginPath(); ctx.arc(ex1, ey1, 1, 0, Math.PI * 2); ctx.fill();
+        ctx.beginPath(); ctx.arc(ex2, ey2, 1, 0, Math.PI * 2); ctx.fill();
+        
+        // Flickering red tongue
+        const flickerPhase = Math.sin(tongueFlicker * 0.02);
+        const tongueOut = flickerPhase > 0.2;
+        
+        if (tongueOut) {
+          const tongueLen = 5 + flickerPhase * 3;
+          const forkLen = 2.5;
+          let tx, ty, tdx, tdy;
+          
+          if (dir.c === 1) { tx = x + CELL + 1; ty = y + CELL/2; tdx = 1; tdy = 0; }
+          else if (dir.c === -1) { tx = x - 1; ty = y + CELL/2; tdx = -1; tdy = 0; }
+          else if (dir.r === -1) { tx = x + CELL/2; ty = y - 1; tdx = 0; tdy = -1; }
+          else { tx = x + CELL/2; ty = y + CELL + 1; tdx = 0; tdy = 1; }
+          
+          ctx.strokeStyle = '#ef4444';
+          ctx.lineWidth = 1.2;
+          ctx.shadowColor = '#ef4444';
+          ctx.shadowBlur = 4;
+          
+          // Main tongue
+          ctx.beginPath();
+          ctx.moveTo(tx, ty);
+          ctx.lineTo(tx + tdx * tongueLen, ty + tdy * tongueLen);
+          ctx.stroke();
+          
+          // Fork
+          const forkX = tx + tdx * tongueLen;
+          const forkY = ty + tdy * tongueLen;
+          ctx.beginPath();
+          ctx.moveTo(forkX, forkY);
+          if (tdx !== 0) {
+            ctx.lineTo(forkX + tdx * forkLen, forkY - forkLen);
+            ctx.moveTo(forkX, forkY);
+            ctx.lineTo(forkX + tdx * forkLen, forkY + forkLen);
+          } else {
+            ctx.lineTo(forkX - forkLen, forkY + tdy * forkLen);
+            ctx.moveTo(forkX, forkY);
+            ctx.lineTo(forkX + forkLen, forkY + tdy * forkLen);
+          }
+          ctx.stroke();
+          ctx.shadowBlur = 0;
+        }
+        
+      } else {
+        // Body segments — gradient from teal to darker
+        const alpha = 1 - progress * 0.5;
+        const hue = 170 + progress * 30;
+        const sat = 70 - progress * 20;
+        const light = 45 - progress * 15;
+        ctx.globalAlpha = alpha;
+        ctx.fillStyle = `hsl(${hue}, ${sat}%, ${light}%)`;
+        ctx.shadowColor = `hsla(${hue}, ${sat}%, ${light + 20}%, 0.4)`;
+        ctx.shadowBlur = 5;
+        roundRect(ctx, x, y, CELL, CELL, 2);
+        ctx.fill();
+        
+        // Subtle scale pattern
+        if (i % 2 === 0) {
+          ctx.globalAlpha = alpha * 0.1;
+          ctx.fillStyle = '#ffffff';
+          roundRect(ctx, x + 2, y + 2, CELL - 4, CELL - 4, 1);
+          ctx.fill();
+        }
+      }
+      
+      ctx.restore();
+    }
+  }
+  
+  // ─── HUD ──────────────────────────────────────────────────────────
+  function updateHUD() {
+    document.getElementById('hud-score').textContent = score;
+    document.getElementById('hud-floating').textContent = floatingCount;
+    document.getElementById('hud-streak').textContent = streak;
+    const speedMult = (180 / moveInterval).toFixed(1);
+    document.getElementById('hud-speed').textContent = speedMult + 'x';
+    
+    // Pulse streak on high values
+    const streakEl = document.getElementById('hud-streak');
+    if (streak >= 5) {
+      streakEl.style.textShadow = `0 0 ${8 + streak}px rgba(34,211,238,0.8)`;
+    } else {
+      streakEl.style.textShadow = 'none';
+    }
+  }
+  
+  // ─── Start ────────────────────────────────────────────────────────
+  requestAnimationFrame(gameLoop);
+  
+})();
+</script>
+</body>
+</html>

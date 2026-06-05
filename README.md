@@ -132,11 +132,23 @@ const developer = {
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png" width="100%"/>
 
-## 🐍 &nbsp;Contribution Activity
+## 🐍 &nbsp;Antigravity Snake
 
 <br/>
 
 <div align="center">
+
+<a href="./antigravity-snake.html">
+  <img src="https://img.shields.io/badge/🐍_Play_Antigravity_Snake-38bdf8?style=for-the-badge&labelColor=0f172a&logoColor=020817" height="42"/>
+</a>
+
+<br/><br/>
+
+> **An interactive GitHub contribution grid where a snake devours your commits — and eaten cells defy gravity, floating upward with particle trails and ripple rings.**
+
+**Features:** Reverse-gravity floating cells · Cyan + green palette · Particle bursts · Ripple rings · Glowing cyan eyes · Flickering red tongue · Real-time HUD (score, floating count, streak, speed)
+
+<br/>
 
 <img src="https://ghchart.rshah.org/38bdf8/Kavathiya-Harsh" width="100%" alt="Harsh's Contribution Chart"/>
 
