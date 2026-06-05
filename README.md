@@ -235,9 +235,9 @@ const harsh = {
 
 <div align="center">
 
-<a href="https://www.linkedin.com/in/harsh-kavathiya" target="_blank">
+<a href="https://www.linkedin.com/in/harshkavathiya" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-0b1120?style=for-the-badge&logo=linkedin&logoColor=0A66C2" height="42"/>
-</a>&nbsp;&nbsp;
+</a>
 <a href="https://twitter.com/harshk62610" target="_blank">
   <img src="https://img.shields.io/badge/Twitter-0b1120?style=for-the-badge&logo=x&logoColor=38bdf8" height="42"/>
 </a>&nbsp;&nbsp;
@@ -246,6 +246,9 @@ const harsh = {
 </a>&nbsp;&nbsp;
 <a href="https://harshkavathiya.vercel.app" target="_blank">
   <img src="https://img.shields.io/badge/Portfolio-0b1120?style=for-the-badge&logo=vercel&logoColor=38bdf8" height="42"/>
+</a>
+<a href="www.youtube.com/@harsh_kavathiya-001" target="_blank">
+  <img src="https://img.shields.io/badge/YouTube-0b1120?style=for-the-badge&logo=youtube&logoColor=FF0000" height="42"/>
 </a>
 
 </div>
