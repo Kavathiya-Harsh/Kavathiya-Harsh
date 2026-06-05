@@ -63,8 +63,6 @@ const harsh = {
 
 <br/><br/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kavathiya-Harsh&langs_count=6&layout=compact&hide_border=true&title_color=38bdf8&text_color=e2e8f0&bg_color=0b1120&icon_color=818cf8" width="95%" alt="Top Languages"/>
-
 </td>
 </tr>
 </table>
@@ -124,7 +122,7 @@ const harsh = {
 
 <div align="center">
 
-<img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=Kavathiya-Harsh&show_icons=true&count_private=true&hide_border=true&title_color=38bdf8&icon_color=818cf8&text_color=e2e8f0&bg_color=0b1120&include_all_commits=true&rank_icon=github" alt="GitHub Stats"/>
+
 <img width="49%" height="195px" src="https://streak-stats.demolab.com/?user=Kavathiya-Harsh&hide_border=true&background=0b1120&ring=38bdf8&fire=818cf8&currStreakLabel=38bdf8&sideLabels=e2e8f0&dates=94a3b8&stroke=1e293b&currStreakNum=ffffff&sideNums=ffffff" alt="GitHub Streak"/>
 
 </div>
